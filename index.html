@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ai-content-&-image-enerator-platform</title>
+    <!-- Favicon-link -->
+    <link rel="shortcut icon" href="assets/images/logo/bitcoin.png" type="image/x-icon">
+    <!-- Fontawesome6-Js-link -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <!-- Bootstrap5-Css-link -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Owl-carousel-Css-link -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <!-- Slick-slider-Css-link -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <!-- select2-Css-link -->
+    <link rel="stylesheet" href="assets/css/select2.min.css">
+
+
+
+    <!-- Style_Css_link -->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+
+</head>
+
+<body onload="preloder_function()" class="">
+    <!-- Preloader area start -->
+    <div id="preloader">
+
+    </div>
+    <!-- Preloader area end -->
+
+    <!-- Nav Area Start -->
+    <nav class="navbar fixed-top navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand logo" href="#"><img src="assets/images/logo/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <i class="fa-regular fa-bars-staggered"></i>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><a class="navbar-brand logo" href="#"><img
+                                src="assets/images/logo/chatbot.png" alt=""></a></h5>
+                    <button type="button" class="cmn-btn-close btn-close" data-bs-dismiss="offcanvas"
+                        aria-label="Close"><i class="fa-regular fa-arrow-right"></i></button>
+                </div>
+                <div class="offcanvas-body align-items-center justify-content-between">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">trade</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="features.html">features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="faq.html">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <form>
+                        <ul class="nav-right d-flex align-items-center">
+                            <li>
+                                <button type="button" class="cmn-btn3">Login</button>
+                            </li>
+                            <li>
+                                <button type="button" class="get-start-btn" href="signup.html">Get Started</button>
+                            </li>
+                            <li>
+                                <a class="nav-link d-flex toggle-btn">
+                                    <i class="fa-regular fa-moon" id="moon" style="display: block;"></i>
+                                    <i class="far fa-sun" id="sun" style="display: none;"></i>
+                                    <div class="form-check form-switch" id="toggle-btn">
+                                        <input class="form-check-input" type="checkbox" role="switch"
+                                            id="flexSwitchCheckDefault">
+                                    </div>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Nav Area End -->
+
+    <!-------------------------------------------------------->
+    <!-- Bottom Mobile Tab nav section start -->
+    <!-------------------------------------------------------->
+    <ul class="nav bottom-nav fixed-bottom d-lg-none">
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="offcanvas" role="button" aria-controls="offcanvasExample"
+                href="#offcanvasNavbar" aria-current="page" href="#"><i class="fa-regular fa-bars-staggered"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-regular fa-shuttle-space"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active"><i class="fa-regular fa-house"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-regular fa-address-book"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-regular fa-user"></i></a>
+        </li>
+    </ul>
+    <!-------------------------------------------------------->
+    <!-- Bottom Mobile Tab nav section end -->
+    <!-------------------------------------------------------->
+
+
+    <!-- Hero area start -->
+    <div class="hero-area">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-7 order-2 order-md-1">
+                    <div class="section-subtitle"><img src="assets/images/hero/lightning.png" alt="">GET 10% OFF NOW
+                    </div>
+                    <h1>Buy and sell Cryptocurrency</h1>
+
+                    <div class="hero-bottom">
+                        <div class="trade-link">
+                            <h5><a href=""><span><i class="fa-regular fa-gift"></i></span> Trade Bitcoin for free<i
+                                        class="fa-regular fa-angle-right"></i></a></h5>
+                        </div>
+
+                        <button type="button" class="cmn-btn w-100"><i class="fa-regular fa-user"></i> Sign up with
+                            Email or
+                            Phone</button>
+                        <hr class="divider">
+                        <div class="cmn-btn-group">
+                            <div class="row g-2">
+                                <div class="col-sm-4">
+                                    <button type="submit" class="btn cmn-btn3 w-100 social-btn"><img
+                                            src="assets/images/login_signup/google.png" alt="">Google</button>
+                                </div>
+                                <div class="col-sm-4">
+                                    <button type="submit" class="btn cmn-btn3 w-100 social-btn"><img
+                                            src="assets/images/login_signup/facebook.png" alt="">Facebook</button>
+                                </div>
+                                <div class="col-sm-4">
+                                    <button type="submit" class="btn cmn-btn3 w-100 social-btn"><img
+                                            src="assets/images/login_signup/apple-logo.png" alt="">Apple</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-5 order-1 order-md-2">
+                    <div class="hero-image-area">
+                        <img src="assets/images/hero/Crypto portfolio-bro 1 1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero area end -->
+
+    <!-- Feature section start -->
+    <section class="feature-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-header mx-auto text-center mb-50">
+                        <h2 class="section-title mx-auto">Our Special Features
+                        </h2>
+                        <span class="title-border"></span>
+                        <p class="cmn-para-text mx-auto">A cryptocurrency wallet is a digital wallet that allows you to
+                            store, send, and receive cryptocurrencies like Bitcoin, Ethereum, and others.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="icon-box">
+                            <i class="fa-light fa-coins"></i>
+                        </div>
+                        <div class="text-box">
+                            <h4>Multi-Coin Wallet</h4>
+                            <p>One wallet. 2,210+ coins. Countless features on the go.</p>
+                        </div>
+
+                    </div>
+                    <div class="feature-box ms-4">
+                        <div class="icon-box">
+                            <i class="fa-brands fa-bitcoin"></i>
+                        </div>
+                        <div class="text-box">
+                            <h4>Cryptocurrency Vault</h4>
+                            <p>Safeguard your coins in our vault and lock them for as long as you want.</p>
+                        </div>
+
+                    </div>
+                    <div class="feature-box">
+                        <div class="icon-box">
+                            <i class="fa-light fa-thumbs-up"></i>
+                        </div>
+                        <div class="text-box">
+                            <h4>Auto Forward Feature</h4>
+                            <p>Automatically send payments to any crypto wallet you want.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4 justify-content-center d-flex">
+                    <div class="feature-mid-section">
+                        <img src="assets/images/feature-section/mission.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="icon-box">
+                            <i class="fa-light fa-earth-americas"></i>
+                        </div>
+                        <div class="text-box">
+                            <h4>Global Payments</h4>
+                            <p>Grow your business globally with borderless, instant and low-cost crypto transactions.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="feature-box ms-4">
+                        <div class="icon-box">
+                            <i class="fa-brands fa-sellcast"></i>
+                        </div>
+                        <div class="text-box">
+                            <h4>Point Of Sale (POS)</h4>
+                            <p>Enhance in-person transactions with crypto payments.</p>
+                        </div>
+
+                    </div>
+                    <div class="feature-box">
+                        <div class="icon-box">
+                            <i class="fa-light fa-arrow-right-arrow-left"></i>
+                        </div>
+                        <div class="text-box">
+                            <h4>Auto Coin Conversion</h4>
+                            <p>Avoid volatility by automatically converting coins.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Feature section end -->
+
+    <!-- About section start -->
+    <section class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-header mx-auto text-center ">
+                        <h2 class="section-title mx-auto">About Cryptos</h2>
+                        <span class="title-border"></span>
+                        <p class="cmn-para-text mx-auto">Cryptos is one of the leading cryptocurrency wallet platforms,
+                            offering cryptocurrency Buy, sell & exchange. Our mission is to make acquiring
+                            cryptocurrencies easy and fast for everyone.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6 justify-content-center d-flex">
+                    <div class="about-image-area">
+                        <img src="assets/images/about/wallet.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="about-content">
+                        <div class="about-item">
+                            <div class="icon-box">
+                                <i class="fa-light fa-database"></i>
+                            </div>
+                            <div class="content-box">
+                                <h4>Performance</h4>
+                                <p>Ultimate performance at low cost</p>
+                            </div>
+                        </div>
+                        <div class="about-item">
+                            <div class="icon-box">
+                                <i class="fa-light fa-globe"></i>
+                            </div>
+                            <div class="content-box">
+                                <h4>World Wide Service
+                                </h4>
+                                <p>Servicing over 2000 customers from 100+ countries
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="about-item">
+                            <div class="icon-box">
+                                <i class="fa-light fa-coins"></i>
+                            </div>
+                            <div class="content-box">
+                                <h4>Multiple Cryptocurrencies
+                                </h4>
+                                <p>We are offering 10+ minable cryptocurrencies.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About section end -->
+
+    <!-- How it works section start -->
+    <section class="how-it-work">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-header text-center mb-50">
+                        <h2>How cryptos works </h2>
+                        <span class="title-border"></span>
+                        <p class="cmn-para-text mx-auto">Learn about our work process. You need to follow the steps
+                            below to start your first invest.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6">
+                    <div class="feature-box">
+                        <div class="icon-box">
+                            <i class="fa-light fa-user-unlock"></i>
+                        </div>
+                        <div class="text-box">
+                            <h4>Register</h4>
+                            <p>Download our app and register in 3 minutes.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="icon-box">
+                            <i class="fa-light fa-address-card"></i>
+                        </div>
+                        <div class="text-box">
+                            <h4>Verify your identity</h4>
+                            <p>Complete the identity verification process to secure your account and transactions.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="icon-box">
+                            <i class="fa-light fa-user"></i>
+                        </div>
+                        <div class="text-box">
+                            <h4>Fund your account</h4>
+                            <p>Add funds to your crypto account to start trading crypto. You can add funds with a
+                                variety of payment methods.</p>
+                        </div>
+
+                    </div>
+                    <div class="feature-box">
+                        <div class="icon-box">
+                            <i class="fa-light fa-chart-line"></i>
+                        </div>
+                        <div class="text-box">
+                            <h4>Start trading</h4>
+                            <p>You're good to go! Buy/sell crypto, set up recurring buys for your investments, and
+                                discover what Binance has to offer.</p>
+                        </div>
+
+                    </div>
+                    <div class="btn-area">
+                        <button type="button" class="cmn-btn">Get Started</button>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="how-it-work-thums d-flex justify-content-center">
+                        <img src="assets/images/how-it-works/dashboard1.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- How it works section end -->
+
+    <!-- Testimonial section start -->
+    <section class="testimonial-section">
+        <div class="container">
+            <div class="row align-items-center align-items-lg-start">
+                <div class="col-md-7 col-lg-6 order-md-2">
+                    <div class="right-content-testimonial">
+                        <div class="section-header">
+                            <h2 class="section-title">What Our Client Say</h2>
+                            <span class="title-border"></span>
+                            <p>A huge number of people trust us and here are the words of some of them.
+
+                            </p>
+                        </div>
+                        <div class="testimonial-slider-slick">
+                            <div class="single">
+                                <div class="feedback-inner-single">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="quote">
+                                            <i class='fa-light fa-quote-left'></i>
+                                        </div>
+                                        <div class="ratings d-flex">
+                                            <i class='fa-light fa-star'></i>
+                                            <i class='fa-light fa-star'></i>
+                                            <i class='fa-light fa-star'></i>
+                                            <i class='fa-light fa-star'></i>
+                                            <i class='fa-light fa-star'></i>
+                                        </div>
+                                    </div>
+                                    <p>There are many variations of passages of Lorem Ipsum availa the majority have
+                                        suffered alteration in some form by injecte our, or rando word which don't look
+                                        even slightly a believable. If you are going to use a passage of Lorem Ipsum,
+                                        you need sure there isn't anything embarrassing.</p>
+                                    <div class="profile-info">
+                                        <h4>Kristin Waon</h4>
+                                        <h5>Web Designer</h5>
+                                    </div>
+                                </div>
+                                <!--/.feedback-inner-single-->
+                            </div>
+                            <div class="single">
+                                <div class="feedback-inner-single">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="quote">
+                                            <i class='fa-light fa-quote-left'></i>
+                                        </div>
+                                        <div class="ratings d-flex">
+                                            <i class='fa-light fa-star'></i>
+                                            <i class='fa-light fa-star'></i>
+                                            <i class='fa-light fa-star'></i>
+                                            <i class='fa-light fa-star'></i>
+                                            <i class='fa-light fa-star'></i>
+                                        </div>
+                                    </div>
+                                    <p>There are many variations of passages of Lorem Ipsum availa the majority have
+                                        suffered alteration in some form by injecte our, or rando word which don't look
+                                        even slightly a believable. If you are going to use a passage of Lorem Ipsum,
+                                        you need sure there isn't anything embarrassing.</p>
+                                    <div class="profile-info">
+                                        <h4>John Waon</h4>
+                                        <h5>App Designer</h5>
+                                    </div>
+                                </div>
+                                <!--/.feedback-inner-single-->
+                            </div>
+                            <div class="single">
+                                <div class="feedback-inner-single">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="quote">
+                                            <i class='fa-light fa-quote-left'></i>
+                                        </div>
+                                        <div class="ratings d-flex">
+                                            <i class='fa-light fa-star'></i>
+                                            <i class='fa-light fa-star'></i>
+                                            <i class='fa-light fa-star'></i>
+                                            <i class='fa-light fa-star'></i>
+                                            <i class='fa-light fa-star'></i>
+                                        </div>
+                                    </div>
+                                    <p>There are many variations of passages of Lorem Ipsum availa the majority have
+                                        suffered alteration in some form by injecte our, or rando word which don't look
+                                        even slightly a believable. If you are going to use a passage of Lorem Ipsum,
+                                        you need sure there isn't anything embarrassing.</p>
+                                    <div class="profile-info">
+                                        <h4>Kim dude</h4>
+                                        <h5>Web Developer</h5>
+                                    </div>
+                                </div>
+                                <!--/.feedback-inner-single-->
+                            </div>
+                            <div class="single">
+                                <div class="feedback-inner-single">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="quote">
+                                            <i class='fa-light fa-quote-left'></i>
+                                        </div>
+                                        <div class="ratings d-flex">
+                                            <i class='fa-light fa-star'></i>
+                                            <i class='fa-light fa-star'></i>
+                                            <i class='fa-light fa-star'></i>
+                                            <i class='fa-light fa-star'></i>
+                                            <i class='fa-light fa-star'></i>
+                                        </div>
+                                    </div>
+                                    <p>There are many variations of passages of Lorem Ipsum availa the majority have
+                                        suffered alteration in some form by injecte our, or rando word which don't look
+                                        even slightly a believable. If you are going to use a passage of Lorem Ipsum,
+                                        you need sure there isn't anything embarrassing.</p>
+                                    <div class="profile-info">
+                                        <h4>Mafia x.</h4>
+                                        <h5>Gang</h5>
+                                    </div>
+                                </div>
+                                <!--/.feedback-inner-single-->
+                            </div>
+                            <div class="single">
+                                <div class="feedback-inner-single">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="quote">
+                                            <i class='fa-light fa-quote-left'></i>
+                                        </div>
+                                        <div class="ratings d-flex">
+                                            <i class='fa-light fa-star'></i>
+                                            <i class='fa-light fa-star'></i>
+                                            <i class='fa-light fa-star'></i>
+                                            <i class='fa-light fa-star'></i>
+                                            <i class='fa-light fa-star'></i>
+                                        </div>
+                                    </div>
+                                    <p>There are many variations of passages of Lorem Ipsum availa the majority have
+                                        suffered alteration in some form by injecte our, or rando word which don't look
+                                        even slightly a believable. If you are going to use a passage of Lorem Ipsum,
+                                        you need sure there isn't anything embarrassing.</p>
+                                    <div class="profile-info">
+                                        <h4>Sufi star</h4>
+                                        <h5>Producer</h5>
+                                    </div>
+                                </div>
+                                <!--/.feedback-inner-single-->
+                            </div>
+                            <div class="single">
+                                <div class="feedback-inner-single">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="quote">
+                                            <i class='fa-light fa-quote-left'></i>
+                                        </div>
+                                        <div class="ratings d-flex">
+                                            <i class='fa-light fa-star'></i>
+                                            <i class='fa-light fa-star'></i>
+                                            <i class='fa-light fa-star'></i>
+                                            <i class='fa-light fa-star'></i>
+                                            <i class='fa-light fa-star'></i>
+                                        </div>
+                                    </div>
+                                    <p>There are many variations of passages of Lorem Ipsum availa the majority have
+                                        suffered alteration in some form by injecte our, or rando word which don't look
+                                        even slightly a believable. If you are going to use a passage of Lorem Ipsum,
+                                        you need sure there isn't anything embarrassing.</p>
+                                    <div class="profile-info">
+                                        <h4>Kristin Waon</h4>
+                                        <h5>Web Designer</h5>
+                                    </div>
+                                </div>
+                                <!--/.feedback-inner-single-->
+                            </div>
+                            <div class="single">
+                                <div class="feedback-inner-single">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="quote">
+                                            <i class='fa-light fa-quote-left'></i>
+                                        </div>
+                                        <div class="ratings d-flex">
+                                            <i class='fa-light fa-star'></i>
+                                            <i class='fa-light fa-star'></i>
+                                            <i class='fa-light fa-star'></i>
+                                            <i class='fa-light fa-star'></i>
+                                            <i class='fa-light fa-star'></i>
+                                        </div>
+                                    </div>
+                                    <p>There are many variations of passages of Lorem Ipsum availa the majority have
+                                        suffered alteration in some form by injecte our, or rando word which don't look
+                                        even slightly a believable. If you are going to use a passage of Lorem Ipsum,
+                                        you need sure there isn't anything embarrassing.</p>
+                                    <div class="profile-info">
+                                        <h4>Kristin Waon</h4>
+                                        <h5>Web Designer</h5>
+                                    </div>
+                                </div>
+                                <!--/.feedback-inner-single-->
+                            </div>
+                        </div>
+                        <div class="custom-paging-testi d-flex justify-content-center flex-column"></div>
+                    </div>
+                    <!--/.right-content-testimonial-->
+                </div>
+                <div class="col-md-5 col-lg-6 order-md-1">
+                    <div class="left-client-images-tbs">
+                        <div class="action-hr">
+                            <a href="#" class="dts1" data-slide="1"><img src="assets/images/testimonial/1.jpg"
+                                    alt=""></a>
+                            <a href="#" class="dts2" data-slide="2"><img src="assets/images/testimonial/2.jpg"
+                                    alt=""></a>
+                            <a href="#" class="dts3" data-slide="3"><img src="assets/images/testimonial/3.jpg"
+                                    alt=""></a>
+                            <a href="#" class="dts4" data-slide="4"><img src="assets/images/testimonial/4.jpg"
+                                    alt=""></a>
+                            <a href="#" class="dts5" data-slide="5"><img src="assets/images/testimonial/5.jpg"
+                                    alt=""></a>
+                            <a href="#" class="dts6" data-slide="6"><img src="assets/images/testimonial/6.jpg"
+                                    alt=""></a>
+                            <a href="#" class="dts7" data-slide="7"><img src="assets/images/testimonial/7.jpg"
+                                    alt=""></a>
+                        </div>
+                    </div>
+                    <!--/.left-client-images-tbs-->
+                </div>
+            </div>
+        </div>
+        <!--/.container-->
+    </section>
+    <!-- Testimonial section end -->
+
+    <!-- Faq section start -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-header text-center mb-50">
+                        <h2>Still have questions?</h2>
+                        <span class="title-border"></span>
+                        <p class="cmn-para-text mx-auto">Cryptocurrency markets have seen an increase in volume in
+                            recent weeks, which is a great opportunity for new traders.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    What is blockchain technology?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="table-responsive">
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident inventore
+                                            vitae sint perferendis cumque ipsam?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    What is Bitcoin?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, labore
+                                        repudiandae. Quis ipsam distinctio necessitatibus, similique sit suscipit magni
+                                        nobis.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, labore
+                                        repudiandae. Quis ipsam distinctio necessitatibus, similique sit suscipit magni
+                                        nobis.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Who created Bitcoin?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut cupiditate aliquam
+                                        corporis, delectus, quis molestias officiis culpa facere nulla fuga explicabo
+                                        expedita.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="accordion" id="accordionExample2">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headinFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                    What is cryptocurrency?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headinFour"
+                                data-bs-parent="#accordionExample2">
+                                <div class="accordion-body">
+                                    <div class="table-responsive">
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem beatae
+                                            laudantium accusantium eius natus deleniti animi incidunt iure sit velit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    How does cryptocurrency wallet work?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#accordionExample2">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, labore
+                                        repudiandae. Quis ipsam distinctio necessitatibus, similique sit suscipit magni
+                                        nobis.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, labore
+                                        repudiandae. Quis ipsam distinctio necessitatibus, similique sit suscipit magni
+                                        nobis.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    How to create cryptocurrency wallet?
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                data-bs-parent="#accordionExample2">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut cupiditate aliquam
+                                        corporis, delectus, quis molestias officiis culpa facere nulla fuga explicabo
+                                        expedita.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Faq section end -->
+
+
+
+    <!-- ---------------------------------------------------- -->
+    <!-- Blog Section start -->
+    <!-- ---------------------------------------------------- -->
+    <section class="blog-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-header text-center mb-50">
+                        <h2 class="section-title mx-auto">Knowledge based blog</h2>
+                        <span class="title-border"></span>
+                        <p class="cmn-para-text mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-box">
+                        <div class="img-box">
+                            <img src="assets/images/blog/1.png" alt="">
+                        </div>
+                        <div class="content-box">
+                            <div class="blog-author">
+                                <div class="author-img">
+                                    <img src="assets/images/blog/2.png" alt="">
+                                </div>
+                                <div class="author-info ">
+                                    <a href="#">
+                                        <h5>Joshep brathwaith</h5>
+                                    </a>
+                                    <span>Consultant</span>
+                                </div>
+                            </div>
+                            <div class=" blog-title">
+                                <h5><a href="blog-details.html">Bitcoin or Gold? Big Investors Think It’s a No-Brainer.
+                                </a></h5>
+                            </div>
+                            <div class="pera-text">
+                                <p>Business we opertes in is like an intericate games and chess where every move counts
+                                </p>
+                            </div>
+                            <button type="button" class="cmn-btn mt-30">read more</button>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-box">
+                        <div class="img-box">
+                            <img src="assets/images/blog/2.png" alt="">
+                        </div>
+                        <div class="content-box">
+                            <div class="blog-author">
+                                <div class="author-img">
+                                    <img src="assets/images/blog/3.png" alt="">
+                                </div>
+                                <div class="author-info ">
+                                    <a href="#">
+                                        <h5>Joshep brathwaith</h5>
+                                    </a>
+                                    <span>Consultant</span>
+                                </div>
+                            </div>
+                            <div class=" blog-title">
+                                <h5><a href="blog-details.html">Chinese Users of the Binance and FTX Exchanges Show Holes in Beijing’s Crypto Ban</a></h5>
+                            </div>
+                            <div class="pera-text">
+                                <p>Business we opertes in is like an intericate games and chess where every move counts
+                                </p>
+                            </div>
+                            <button type="button" class="cmn-btn mt-30">read more</button>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-box">
+                        <div class="img-box">
+                            <img src="assets/images/blog/3.jpg" alt="">
+                        </div>
+                        <div class="content-box">
+                            <div class="blog-author">
+                                <div class="author-img">
+                                    <img src="assets/images/blog/4.jpg" alt="">
+                                </div>
+                                <div class="author-info ">
+                                    <a href="#">
+                                        <h5>Joshep brathwaith</h5>
+                                    </a>
+                                    <span>Consultant</span>
+                                </div>
+                            </div>
+                            <div class=" blog-title">
+                                <h5><a href="blog-details.html">Cryptocurrency Regulations Around the World
+                                </a></h5>
+                            </div>
+                            <div class="pera-text">
+                                <p>Business we opertes in is like an intericate games and chess where every move counts
+                                </p>
+                            </div>
+                            <button type="button" class="cmn-btn mt-30">read more</button>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- ---------------------------------------------------- -->
+    <!-- Blog Section end -->
+    <!-- ---------------------------------------------------- -->
+
+
+    <!-- footer section start -->
+    <section class="footer-area pb-50 pt-50">
+        <div class="container">
+            <div class="newsletter-area">
+                <div class="row g-5 align-items-center">
+                    <div class="col-md-6">
+                        <h2 class="Newslatter-title mb-0">Connect With Smart AI Tools
+                        </h2>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="newsletter-inner">
+                            <form class="subscribe-form">
+                                <input type="text" placeholder="Enter your email address">
+                                <button><i class="fa-regular fa-arrow-right fa-beat"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="cmn-hr">
+            <div class="row gy-4 gy-sm-5">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="footer-widget">
+                        <div class="widget_logo mb-30">
+                            <a href="#nav_area"><img class="footer-logo" src="assets/images/logo/logo.png" alt=""></a>
+                        </div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur fuga odit excepturi,
+                            natus voluptate commodi qui sunt quisquam cupiditate molestiae?</p>
+                        <div class="social-area mt-50">
+                            <ul class="d-flex">
+                                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                                <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <div class="footer-widget">
+                        <h5>Quick Links</h5>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 pt-sm-0 pt-3 ps-lg-5">
+                    <div class="footer-widget">
+                        <h5>Support</h5>
+                        <ul>
+                            <li><a href="">Help Center</a></li>
+                            <li><a href="">Blog & Tutorial</a></li>
+                            <li><a href="">Pricing</a></li>
+                            <li><a href="">Student Discount</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 pt-sm-0 pt-3">
+                    <div class="footer-widget">
+                        <h5>Contact Us</h5>
+                        <p>10714 163rd Pl, Orland Park, IL 60467, United States</p>
+                        <p>email@website.com</p>
+                        <p>354-4156745674</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="cmn-hr">
+            <div class="copy-right-area">
+                <div class="row gy-4 ">
+                    <div class="col-sm-6 text-sm-start text-center">
+                        <p>Copyright © 2023 <a href="" class="highlight">Best Ai</a> All Rights Reserved</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="language text-sm-end text-center">
+                            <a href="" class="language">English</a>
+                            <a href="" class="language">Spanish</a>
+                            <a href="" class="language">Germany</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer section start -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Jquery Js link -->
+    <script src="assets/js/jquery-3.6.1.min.js"></script>
+
+    <!-- Bootstrap Js link -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Owl carausel Js link -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- Swiper Js link -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- Slick slider js link -->
+    <script src="assets/js/slick.min.js"></script>
+    <!-- select2 Js link -->
+    <script src="assets/js/select2.min.js"></script>
+
+
+    <!-- Main Js link -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

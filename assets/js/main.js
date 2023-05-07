@@ -138,20 +138,39 @@ $(document).ready(function () {
         loop: true,
 
     });
-
-    // Qr section start
-    var qr = QRCode.generatePNG(document.getElementById("qrUrl").value, {
-        ecclevel: "M",
-        format: "html",
-        margin: 4,
-        modulesize: 8,
+    // Testimonial section start
+    // Slick slider 
+    $(function (e) {
+        "use strict";
+        e(".testimonial-slider-slick").slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: !1,
+            focusOnSelect: !0,
+            dots: !0,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            appendDots: e(".custom-paging-testi"),
+            responsive: [{
+                breakpoint: 767,
+                settings: {
+                    autoplay: !1
+                }
+            }, {
+                breakpoint: 420,
+                settings: {
+                    autoplay: !1
+                }
+            }]
+        }), e("a[data-slide]").click(function (s) {
+            s.preventDefault();
+            var o = e(this).data("slide");
+            e(".testimonial-slider-slick").slick("slickGoTo", o - 1)
+        })
     });
+    // Testimonial section start
 
-    var img = document.createElement("img");
-    img.src = qr;
-    document.getElementById("qrcode").appendChild(img);
-    var download = (document.getElementById("download-qr").href = qr);
-    // Qr section end
+
 
 
 
@@ -172,7 +191,10 @@ $(document).ready(function () {
 
 
 
+
+
 });
+
 
 
 
@@ -184,4 +206,7 @@ const previewImage = (id) => {
 // Tooltip
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+
+
+
 

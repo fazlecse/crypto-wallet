@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cryptos Dashboard</title>
+    <!-- Favicon link -->
+    <link rel="shortcut icon" href="assets/images/logo/bitcoin.png" type="image/x-icon">
     <!-- Fontawesome-6 Js link -->
     <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
@@ -389,215 +391,319 @@
                 <h2>Transections</h2>
             </div>
         </div>
-        <!-- Filter area start -->
-        <div class="filter-area">
-            <div class="row g-4">
-                <div class="col-sm-4">
-                    <div class="search-bar">
-                        <form class="search-form d-flex align-items-center" method="POST" action="#">
-                            <input type="text" class="form-control" name="query" placeholder="Search"
-                                title="Enter search keyword">
-                            <button type="submit" title="Search"><i class="fa-light fa-magnifying-glass"></i></button>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-sm-3 ms-auto">
-                    <select class="cmn-select2-dropdown" name="state">
-                        <option value="AL">Newest</option>
-                        <option value="WY">Oldest</option>
-                        <option value="WY">Latest</option>
-                    </select>
+
+        <!-- Cmn table section start -->
+        <div class="card">
+            <div class="card-header d-flex justify-content-between border-0">
+                <div class="card-title">Fund History</div>
+                <div class="btn-area">
+                    <button type="button" class="cmn-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                        aria-controls="offcanvasExample">Filter<i class="fa-regular fa-filter"></i></button>
                 </div>
             </div>
-        </div>
-        <!-- Filter area end -->
-        <!-- Cmn table section start -->
-        <div class="cmn-table">
-            <div class="table-responsive overflow-hidden">
-                <table class="table align-middle">
-                    <thead>
-                        <tr>
-                            <th scope="col"><input type="checkbox" class="form-check-input" id="exampleCheck1"></th>
-                            <th scope="col">Transaction ID</th>
-                            <th scope="col">Gateway</th>
-                            <th scope="col">Amount</th>
-                            <th scope="col">Charge</th>
-                            <th scope="col">Status</th>
-                            <th scope="col">Time</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td data-label="" scope="row">
-                                <div class="icon-area icon1">
-                                    <i class="fa-regular fa-arrow-up-left"></i>
-                                </div>
-                            </td>
-                            <td data-label="Transaction ID"><span>#12415346563475</span></td>
-                            <td data-label="Gateway">
-                                <span>Bank Transfer</span>
-                            </td>
-                            <td data-label="Amount">
-                                <span>10 USD</span>
-                            </td>
-                            <td data-label="Charge">
-                                <span>5 USD</span>
-                            </td>
-                            <td data-label="Status">
-                                <span class="badge text-bg-primary">Primary</span>
-                            </td>
-                            <td data-label="Time">
-                                <span>12 Apr 2023 04:40 PM</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td data-label="" scope="row">
-                                <div class="icon-area icon2">
-                                    <i class="fa-regular fa-arrow-down-right"></i>
-                                </div>
-                            </td>
-                            <td data-label="Transaction ID"><span>#12415346563475</span></td>
-                            <td data-label="Gateway">
-                                <span>Bank Transfer</span>
-                            </td>
-                            <td data-label="Amount">
-                                <span>10 USD</span>
-                            </td>
-                            <td data-label="Charge">
-                                <span>5 USD</span>
-                            </td>
-                            <td data-label="Status">
-                                <span class="badge text-bg-secondary">Primary</span>
-                            </td>
-                            <td data-label="Time">
-                                <span>12 Apr 2023 04:40 PM</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td data-label="" scope="row">
-                                <div class="icon-area icon1">
-                                    <i class="fa-regular fa-arrow-up-left"></i>
-                                </div>
-                            </td>
-                            <td data-label="Transaction ID"><span>#12415346563475</span></td>
-                            <td data-label="Gateway">
-                                <span>Bank Transfer</span>
-                            </td>
-                            <td data-label="Amount">
-                                <span>10 USD</span>
-                            </td>
-                            <td data-label="Charge">
-                                <span>5 USD</span>
-                            </td>
-                            <td data-label="Status">
-                                <span class="badge text-bg-success">Primary</span>
-                            </td>
-                            <td data-label="Time">
-                                <span>12 Apr 2023 04:40 PM</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td data-label="" scope="row">
-                                <div class="icon-area icon1">
-                                    <i class="fa-regular fa-arrow-up-left"></i>
-                                </div>
-                            </td>
-                            <td data-label="Transaction ID"><span>#12415346563475</span></td>
-                            <td data-label="Gateway">
-                                <span>Bank Transfer</span>
-                            </td>
-                            <td data-label="Amount">
-                                <span>10 USD</span>
-                            </td>
-                            <td data-label="Charge">
-                                <span>5 USD</span>
-                            </td>
-                            <td data-label="Status">
-                                <span class="badge text-bg-danger">Primary</span>
-                            </td>
-                            <td data-label="Time">
-                                <span>12 Apr 2023 04:40 PM</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td data-label="" scope="row">
-                                <div class="icon-area icon1">
-                                    <i class="fa-regular fa-arrow-up-left"></i>
-                                </div>
-                            </td>
-                            <td data-label="Transaction ID"><span>#12415346563475</span></td>
-                            <td data-label="Gateway">
-                                <span>Bank Transfer</span>
-                            </td>
-                            <td data-label="Amount">
-                                <span>10 USD</span>
-                            </td>
-                            <td data-label="Charge">
-                                <span>5 USD</span>
-                            </td>
-                            <td data-label="Status">
-                                <span class="badge text-bg-warning">Primary</span>
-                            </td>
-                            <td data-label="Time">
-                                <span>12 Apr 2023 04:40 PM</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td data-label="" scope="row">
-                                <div class="icon-area icon2">
-                                    <i class="fa-regular fa-arrow-down-right"></i>
-                                </div>
-                            </td>
-                            <td data-label="Transaction ID"><span>#12415346563475</span></td>
-                            <td data-label="Gateway">
-                                <span>Bank Transfer</span>
-                            </td>
-                            <td data-label="Amount">
-                                <span>10 USD</span>
-                            </td>
-                            <td data-label="Charge">
-                                <span>5 USD</span>
-                            </td>
-                            <td data-label="Status">
-                                <span class="badge text-bg-info">Primary</span>
-                            </td>
-                            <td data-label="Time">
-                                <span>12 Apr 2023 04:40 PM</span>
-                            </td>
-                        </tr>
+            <div class="card-body">
+                <div class="cmn-table">
+                    <div class="table-responsive overflow-hidden">
+                        <table class="table align-middle">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Transaction ID</th>
+                                    <th scope="col">Gateway</th>
+                                    <th scope="col">Amount</th>
+                                    <th scope="col">Charge</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Time & Date</th>
+                                    <th scope="col">action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-label="Transaction ID"><span>#12415346563475</span></td>
+                                    <td data-label="Gateway">
+                                        <span>Bank Transfer</span>
+                                    </td>
+                                    <td data-label="Amount">
+                                        <span>10 USD</span>
+                                    </td>
+                                    <td data-label="Charge">
+                                        <span>5 USD</span>
+                                    </td>
+                                    <td data-label="Status">
+                                        <span class="badge text-bg-primary">Primary</span>
+                                    </td>
+                                    <td data-label="Time">
+                                        <span>12 Apr 2023 04:40 PM</span>
+                                    </td>
+                                    <td data-label="Action">
+                                        <div class="dropdown">
+                                            <a class="" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="fa-regular fa-ellipsis-stroke-vertical"></i>
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">save</a></li>
+                                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                        data-bs-target="#apply-modal">apply</a></li>
+                                                <li><a class="dropdown-item" href="#">copy link</a>
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">report</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Transaction ID"><span>#12415346563475</span></td>
+                                    <td data-label="Gateway">
+                                        <span>Bank Transfer</span>
+                                    </td>
+                                    <td data-label="Amount">
+                                        <span>10 USD</span>
+                                    </td>
+                                    <td data-label="Charge">
+                                        <span>5 USD</span>
+                                    </td>
+                                    <td data-label="Status">
+                                        <span class="badge text-bg-secondary">Primary</span>
+                                    </td>
+                                    <td data-label="Time">
+                                        <span>12 Apr 2023 04:40 PM</span>
+                                    </td>
+                                    <td data-label="Action">
+                                        <div class="dropdown">
+                                            <a class="" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="fa-regular fa-ellipsis-stroke-vertical"></i>
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">save</a></li>
+                                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                        data-bs-target="#apply-modal">apply</a></li>
+                                                <li><a class="dropdown-item" href="#">copy link</a>
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">report</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Transaction ID"><span>#12415346563475</span></td>
+                                    <td data-label="Gateway">
+                                        <span>Bank Transfer</span>
+                                    </td>
+                                    <td data-label="Amount">
+                                        <span>10 USD</span>
+                                    </td>
+                                    <td data-label="Charge">
+                                        <span>5 USD</span>
+                                    </td>
+                                    <td data-label="Status">
+                                        <span class="badge text-bg-success">Primary</span>
+                                    </td>
+                                    <td data-label="Time">
+                                        <span>12 Apr 2023 04:40 PM</span>
+                                    </td>
+                                    <td data-label="Action">
+                                        <div class="dropdown">
+                                            <a class="" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="fa-regular fa-ellipsis-stroke-vertical"></i>
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">save</a></li>
+                                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                        data-bs-target="#apply-modal">apply</a></li>
+                                                <li><a class="dropdown-item" href="#">copy link</a>
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">report</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Transaction ID"><span>#12415346563475</span></td>
+                                    <td data-label="Gateway">
+                                        <span>Bank Transfer</span>
+                                    </td>
+                                    <td data-label="Amount">
+                                        <span>10 USD</span>
+                                    </td>
+                                    <td data-label="Charge">
+                                        <span>5 USD</span>
+                                    </td>
+                                    <td data-label="Status">
+                                        <span class="badge text-bg-danger">Primary</span>
+                                    </td>
+                                    <td data-label="Time">
+                                        <span>12 Apr 2023 04:40 PM</span>
+                                    </td>
+                                    <td data-label="Action">
+                                        <div class="dropdown">
+                                            <a class="" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="fa-regular fa-ellipsis-stroke-vertical"></i>
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">save</a></li>
+                                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                        data-bs-target="#apply-modal">apply</a></li>
+                                                <li><a class="dropdown-item" href="#">copy link</a>
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">report</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Transaction ID"><span>#12415346563475</span></td>
+                                    <td data-label="Gateway">
+                                        <span>Bank Transfer</span>
+                                    </td>
+                                    <td data-label="Amount">
+                                        <span>10 USD</span>
+                                    </td>
+                                    <td data-label="Charge">
+                                        <span>5 USD</span>
+                                    </td>
+                                    <td data-label="Status">
+                                        <span class="badge text-bg-warning">Primary</span>
+                                    </td>
+                                    <td data-label="Time">
+                                        <span>12 Apr 2023 04:40 PM</span>
+                                    </td>
+                                    <td data-label="Action"><button type="button" class="action-btn"><i
+                                                class="fa-regular fa-pen-to-square"></i></button></td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Transaction ID"><span>#12415346563475</span></td>
+                                    <td data-label="Gateway">
+                                        <span>Bank Transfer</span>
+                                    </td>
+                                    <td data-label="Amount">
+                                        <span>10 USD</span>
+                                    </td>
+                                    <td data-label="Charge">
+                                        <span>5 USD</span>
+                                    </td>
+                                    <td data-label="Status">
+                                        <span class="badge text-bg-info">Primary</span>
+                                    </td>
+                                    <td data-label="Time">
+                                        <span>12 Apr 2023 04:40 PM</span>
+                                    </td>
+                                    <td data-label="Action"><button type="button" class="action-btn"><i
+                                                class="fa-regular fa-pen-to-square"></i></button></td>
+                                </tr>
 
-                        <tr>
-                            <td data-label="" scope="row">
-                                <div class="icon-area icon2">
-                                    <i class="fa-regular fa-arrow-down-right"></i>
-                                </div>
-                            </td>
-                            <td data-label="Transaction ID"><span>#12415346563475</span></td>
-                            <td data-label="Gateway">
-                                <span>Bank Transfer</span>
-                            </td>
-                            <td data-label="Amount">
-                                <span>10 USD</span>
-                            </td>
-                            <td data-label="Charge">
-                                <span>5 USD</span>
-                            </td>
-                            <td data-label="Status">
-                                <span class="badge text-bg-dark">Primary</span>
-                            </td>
-                            <td data-label="Time">
-                                <span>12 Apr 2023 04:40 PM</span>
-                            </td>
-                        </tr>
+                                <tr>
+                                    <td data-label="Transaction ID"><span>#12415346563475</span></td>
+                                    <td data-label="Gateway">
+                                        <span>Bank Transfer</span>
+                                    </td>
+                                    <td data-label="Amount">
+                                        <span>10 USD</span>
+                                    </td>
+                                    <td data-label="Charge">
+                                        <span>5 USD</span>
+                                    </td>
+                                    <td data-label="Status">
+                                        <span class="badge text-bg-dark">Primary</span>
+                                    </td>
+                                    <td data-label="Time">
+                                        <span>12 Apr 2023 04:40 PM</span>
+                                    </td>
+                                    <td data-label="Action"><button type="button" class="action-btn"><i
+                                                class="fa-regular fa-pen-to-square"></i></button></td>
+                                </tr>
 
-
-
-
-                    </tbody>
-                </table>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- Cmn table section end -->
+
+        <!-- Transections section start -->
+        <div class="transections-section mt-50">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">send money</div>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="row g-4">
+                                    <div class="col-12">
+                                        <div>
+                                            <label for="Recipient-email-or-username" class="form-label">Recipient email
+                                                or username </label>
+                                            <input type="text" class="form-control" id="Recipient-email-or-username"
+                                                aria-describedby="emailHelp">
+                                            <div id="emailHelp" class="form-text">User found. Are you looking for Lucky
+                                                Imuesili?</div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div>
+                                            <label for="currency" class="form-label">currency</label>
+                                            <input type="text" class="form-control" id="currency"
+                                                aria-describedby="emailHelp">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div>
+                                            <label for="Amount" class="form-label">Amount</label>
+                                            <input type="text" class="form-control" id="Amount"
+                                                aria-describedby="emailHelp">
+                                            <div id="emailHelp" class="form-text">Remaining balance: 342342.14</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" role="switch"
+                                                id="flexSwitchCheckDefault2">
+                                            <label class="form-check-label" for="flexSwitchCheckDefault2">Receiver will
+                                                pay the txt charge</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div>
+                                            <label for="exampleFormControlTextarea1" class="form-label">Note</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                rows="2"></textarea>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="btn-area">
+                                        <button type="submit" class="cmn-btn w-100">send money</button>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="section-header">
+                        <h5>Transection Details</h5>
+                    </div>
+                    <ul class="list-area">
+                        <li><span>Available balance</span> <span>2544.14 USD</span></li>
+                        <li><span>Transfer charge</span> <span>0.15 + 1 = 1.15 USD</span></li>
+                        <li><span>payable amount</span> <span>14.15 USD</span></li>
+                        <li><span>receiver will receive</span> <span>10 USD</span></li>
+                        <li><span>remeining balance</span> <span>55456.11 USD</span></li>
+                        <li><span>min request limit</span> <span>1.00 USD</span></li>
+                        <li><span>max request limit</span> <span>500.00 USD</span></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <!-- Transections section end -->
 
 
     </main><!-- End #main -->
@@ -606,6 +712,51 @@
 
 
 
+
+    <!-- Offcanvas sidebar start -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Product Filter</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <form>
+                <div class="row g-4">
+                    <div>
+                        <label for="ProductName" class="form-label">Product Name</label>
+                        <input type="text" class="form-control" id="ProductName" aria-describedby="emailHelp">
+                    </div>
+                    <div>
+                        <label for="NumberOfSales" class="form-label">Number of sales</label>
+                        <input type="text" class="form-control" id="NumberOfSales" aria-describedby="emailHelp">
+                    </div>
+                    <div>
+                        <label for="inputAddress" class="form-label">status</label>
+                        <select class="cmn-select2-dropdown" name="state">
+                            <option value="AL">All status</option>
+                            <option value="AL">Bangladesh</option>
+                            <option value="WY">Australia</option>
+                            <option value="WY">Belarus</option>
+                            <option value="WY">Canada</option>
+                            <option value="WY">China</option>
+                            <option value="WY">France</option>
+                            <option value="WY">Germany</option>
+                            <option value="WY">India</option>
+                            <option value="WY">Indonesia</option>
+                            <option value="WY">Italy</option>
+                            <option value="WY">Japan</option>
+                            <option value="WY">Korea</option>
+                        </select>
+                    </div>
+                    <div class="btn-area">
+                        <button type="submit" class="cmn-btn">Filter</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <!-- Offcanvas sidebar end -->
 
 
 
