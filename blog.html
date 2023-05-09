@@ -5,23 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ai-content-&-image-enerator-platform</title>
+    <title>Crypto Wallet</title>
     <!-- Favicon-link -->
-    <link rel="shortcut icon" href="assets/images/logo/chatbot.png" type="image/x-icon">
-    <!-- Fontawesome6_Js_link -->
+    <link rel="shortcut icon" href="assets/images/logo/bitcoin.png" type="image/x-icon">
+    <!-- Fontawesome6-Js-link -->
     <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
-    <!-- Bootstrap5_Css_link -->
+    <!-- Bootstrap5-Css-link -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <!-- Owl_carousel_Css_link -->
+    <!-- Owl-carousel-Css-link -->
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-    <!-- Swiper_Css_link -->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-    <!-- select2_Css_link -->
+    <!-- Slick-slider-Css-link -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <!-- select2-Css-link -->
     <link rel="stylesheet" href="assets/css/select2.min.css">
-
-
 
     <!-- Style_Css_link -->
     <link rel="stylesheet" href="assets/css/style.min.css">
@@ -36,7 +35,7 @@
     <!-- Preloader area end -->
 
     <!-- Nav Area Start -->
-    <nav class="navbar desktop-nav banner-nav fixed-top navbar-expand-lg">
+    <nav class="navbar fixed-top navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand logo" href="#"><img src="assets/images/logo/logo.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
@@ -46,8 +45,10 @@
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><a class="navbar-brand logo" href="#"><img
+                                src="assets/images/logo/chatbot.png" alt=""></a></h5>
+                    <button type="button" class="cmn-btn-close btn-close" data-bs-dismiss="offcanvas"
+                        aria-label="Close"><i class="fa-regular fa-arrow-right"></i></button>
                 </div>
                 <div class="offcanvas-body align-items-center justify-content-between">
                     <ul class="navbar-nav m-auto">
@@ -55,7 +56,7 @@
                             <a class="nav-link active" aria-current="page" href="index.html">home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About us</a>
+                            <a class="nav-link" href="about.html">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">trade</a>
@@ -74,10 +75,20 @@
                     <form>
                         <ul class="nav-right d-flex align-items-center">
                             <li>
-                                <a class="login-btn" href="login.html">Login</a>
+                                <a href="login.html" class="login-btn">Login</a>
                             </li>
                             <li>
                                 <button type="button" class="get-start-btn" href="signup.html">Get Started</button>
+                            </li>
+                            <li>
+                                <a class="nav-link d-flex toggle-btn">
+                                    <i class="fa-regular fa-moon" id="moon" style="display: block;"></i>
+                                    <i class="far fa-sun" id="sun" style="display: none;"></i>
+                                    <div class="form-check form-switch" id="toggle-btn">
+                                        <input class="form-check-input" type="checkbox" role="switch"
+                                            id="flexSwitchCheckDefault">
+                                    </div>
+                                </a>
                             </li>
 
                         </ul>
@@ -114,9 +125,10 @@
     <section class="blog-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 offset-lg-1">
+                <div class="col-12">
                     <div class="section-header text-center mb-50">
-                        <h2>Our Recent <span class="text-gradient">Blog</span> </h2>
+                        <h2 class="section-title mx-auto">Knowledge based blog</h2>
+                        <span class="title-border"></span>
                         <p class="cmn-para-text mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                             eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         </p>
@@ -127,83 +139,94 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="blog-box">
                         <div class="img-box">
-                            <img src="assets/images/blog/01.jpg" alt="">
+                            <img src="assets/images/blog/1.png" alt="">
                         </div>
-                        <div class="blog-author">
-                            <div class="author-img">
-                                <img src="assets/images/testimonial/tst1.png" alt="">
+                        <div class="content-box">
+                            <div class="blog-author">
+                                <div class="author-img">
+                                    <img src="assets/images/blog/2.png" alt="">
+                                </div>
+                                <div class="author-info ">
+                                    <a href="#">
+                                        <h5>Joshep brathwaith</h5>
+                                    </a>
+                                    <span>Consultant</span>
+                                </div>
                             </div>
-                            <div class="author-info ">
-                                <a href="#">
-                                    <h5>Joshep brathwaith</h5>
-                                </a>
-                                <span>Consultant</span>
+                            <div class=" blog-title">
+                                <h5><a href="blog-details.html">Bitcoin or Gold? Big Investors Think It’s a No-Brainer.
+                                    </a></h5>
                             </div>
-                        </div>
-                        <div class=" blog-title">
-                            <h4><a href="blog-details.html">Survival strategies to ensure business domination</a></h4>
-                        </div>
-                        <div class="pera-text">
-                            <p>Business we opertes in is like an intericate games and chess where every move counts
-                            </p>
-                        </div>
-                        <button type="button" class="cmn-btn3">read more</button>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="blog-box" data-wow-delay="0.1s">
-                        <div class="img-box">
-                            <img src="assets/images/blog/2.png" alt="">
-                        </div>
-                        <div class="blog-author">
-                            <div class="author-img">
-                                <img src="assets/images/testimonial/tst2.png" alt="">
+                            <div class="pera-text">
+                                <p>Business we opertes in is like an intericate games and chess where every move counts
+                                </p>
                             </div>
-                            <div class="author-info ">
-                                <a href="#">
-                                    <h5>Joshep brathwaith</h5>
-                                </a>
-                                <span>Consultant</span>
-                            </div>
+                            <button type="button" class="cmn-btn mt-30">read more</button>
                         </div>
-                        <div class=" blog-title">
-                            <h4><a href="">Survival strategies to ensure business domination Lorem ipsum dolor sit
-                                    amet consectetur adipisicing elit. Sed, aliquam?</a></h4>
-                        </div>
-                        <div class="pera-text">
-                            <p>Business we opertes in is like an intericate games and chess where every move counts
-                            </p>
-                        </div>
-                        <button type="button" class="cmn-btn3">read more</button>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="blog-box" data-wow-delay="0.2s">
-                        <div class="img-box">
-                            <img src="assets/images/blog/3.png" alt="">
-                        </div>
-                        <div class="blog-author">
-                            <div class="author-img">
-                                <img src="assets/images/testimonial/tst3.png" alt="">
-                            </div>
-                            <div class="author-info ">
-                                <a href="#">
-                                    <h5>Joshep brathwaith</h5>
-                                </a>
-                                <span>Consultant</span>
-                            </div>
-                        </div>
-                        <div class=" blog-title">
-                            <h4><a href="">Survival strategies to ensure business domination</a></h4>
-                        </div>
-                        <div class="pera-text">
-                            <p>Business we opertes in is like an intericate games and chess where every move counts
-                            </p>
-                        </div>
-                        <button type="button" class="cmn-btn3">read more</button>
 
                     </div>
                 </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-box">
+                        <div class="img-box">
+                            <img src="assets/images/blog/2.png" alt="">
+                        </div>
+                        <div class="content-box">
+                            <div class="blog-author">
+                                <div class="author-img">
+                                    <img src="assets/images/blog/3.png" alt="">
+                                </div>
+                                <div class="author-info ">
+                                    <a href="#">
+                                        <h5>Joshep brathwaith</h5>
+                                    </a>
+                                    <span>Consultant</span>
+                                </div>
+                            </div>
+                            <div class=" blog-title">
+                                <h5><a href="blog-details.html">Chinese Users of the Binance and FTX Exchanges Show
+                                        Holes in Beijing’s Crypto Ban</a></h5>
+                            </div>
+                            <div class="pera-text">
+                                <p>Business we opertes in is like an intericate games and chess where every move counts
+                                </p>
+                            </div>
+                            <button type="button" class="cmn-btn mt-30">read more</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-box">
+                        <div class="img-box">
+                            <img src="assets/images/blog/3.jpg" alt="">
+                        </div>
+                        <div class="content-box">
+                            <div class="blog-author">
+                                <div class="author-img">
+                                    <img src="assets/images/blog/4.jpg" alt="">
+                                </div>
+                                <div class="author-info ">
+                                    <a href="#">
+                                        <h5>Joshep brathwaith</h5>
+                                    </a>
+                                    <span>Consultant</span>
+                                </div>
+                            </div>
+                            <div class=" blog-title">
+                                <h5><a href="blog-details.html">Cryptocurrency Regulations Around the World
+                                    </a></h5>
+                            </div>
+                            <div class="pera-text">
+                                <p>Business we opertes in is like an intericate games and chess where every move counts
+                                </p>
+                            </div>
+                            <button type="button" class="cmn-btn mt-30">read more</button>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -211,31 +234,15 @@
     <!-- Blog Section end -->
     <!-- ---------------------------------------------------- -->
 
-    <!-- footer section start -->
-    <section class="footer-area pb-50 pt-50">
+    <!-- ---------------------------------------------------- -->
+    <!-- Footer Section start -->
+    <!-- ---------------------------------------------------- -->
+    <section class="footer-section pb-50">
         <div class="container">
-            <div class="newsletter-area">
-                <div class="row g-5 align-items-center">
-                    <div class="col-md-6">
-                        <h2 class="Newslatter-title mb-0">Connect With Smart AI Tools
-                        </h2>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="newsletter-inner">
-                            <form class="subscribe-form">
-                                <input type="text" placeholder="Enter your email address">
-                                <button><i class="fa-regular fa-arrow-right fa-beat"></i></button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <hr class="cmn-hr">
             <div class="row gy-4 gy-sm-5">
                 <div class="col-lg-4 col-sm-6">
                     <div class="footer-widget">
-                        <div class="widget_logo mb-30">
+                        <div class="widget-logo mb-30">
                             <a href="#nav_area"><img class="footer-logo" src="assets/images/logo/logo.png" alt=""></a>
                         </div>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur fuga odit excepturi,
@@ -264,42 +271,53 @@
                 </div>
                 <div class="col-lg-3 col-sm-6 pt-sm-0 pt-3 ps-lg-5">
                     <div class="footer-widget">
-                        <h5>Support</h5>
+                        <h5>Company Policy</h5>
                         <ul>
-                            <li><a href="">Help Center</a></li>
-                            <li><a href="">Blog & Tutorial</a></li>
-                            <li><a href="">Pricing</a></li>
-                            <li><a href="">Student Discount</a></li>
+                            <li><a href="">Terms of use</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Refund Policy</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6 pt-sm-0 pt-3">
                     <div class="footer-widget">
-                        <h5>Contact Us</h5>
-                        <p>10714 163rd Pl, Orland Park, IL 60467, United States</p>
-                        <p>email@website.com</p>
-                        <p>354-4156745674</p>
+                        <h5>Newsletter</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nihil debitis</p>
+                        <form action="">
+                            <div class="col">
+                                <input type="email" class="form-control" id="inputEmail4"
+                                    placeholder="Your mail address">
+                                <button type="submit" class="cmn-btn w-100">Subscribe</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
             <hr class="cmn-hr">
+            <!-- Copyright-area-start -->
             <div class="copy-right-area">
-                <div class="row gy-4 ">
-                    <div class="col-sm-6 text-sm-start text-center">
-                        <p>Copyright © 2023 <a href="" class="highlight">Best Ai</a> All Rights Reserved</p>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="language text-sm-end text-center">
-                            <a href="" class="language">English</a>
-                            <a href="" class="language">Spanish</a>
-                            <a href="" class="language">Germany</a>
+                <div class="container">
+                    <div class="row gy-4 ">
+                        <div class="col-sm-6 text-sm-start text-center">
+                            <p>Copyright ©2023 <a class="highlight" href="index.html">Cryptos</a> All Rights Reserved
+                            </p>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="language text-sm-end text-center">
+                                <a href="" class="language">English</a>
+                                <a href="" class="language">Spanish</a>
+                                <a href="" class="language">Germany</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Copyright-area-end -->
         </div>
     </section>
-    <!-- footer section start -->
+    <!-- ---------------------------------------------------- -->
+    <!-- Footer Section end -->
+    <!-- ---------------------------------------------------- -->
 
 
 
@@ -310,11 +328,6 @@
 
 
 
-
-
-    <div class="container">
-
-    </div>
 
 
 

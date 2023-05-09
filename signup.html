@@ -5,23 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ai-content-&-image-enerator-platform</title>
+    <title>Crypto Wallet</title>
     <!-- Favicon-link -->
-    <link rel="shortcut icon" href="assets/images/logo/chatbot.png" type="image/x-icon">
-    <!-- Fontawesome6_Js_link -->
+    <link rel="shortcut icon" href="assets/images/logo/bitcoin.png" type="image/x-icon">
+    <!-- Fontawesome6-Js-link -->
     <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
-    <!-- Bootstrap5_Css_link -->
+    <!-- Bootstrap5-Css-link -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <!-- Owl_carousel_Css_link -->
+    <!-- Owl-carousel-Css-link -->
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-    <!-- Swiper_Css_link -->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-    <!-- select2_Css_link -->
+    <!-- Slick-slider-Css-link -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <!-- select2-Css-link -->
     <link rel="stylesheet" href="assets/css/select2.min.css">
-
-
 
     <!-- Style_Css_link -->
     <link rel="stylesheet" href="assets/css/style.min.css">
@@ -36,7 +35,7 @@
     <!-- Preloader area end -->
 
     <!-- Nav Area Start -->
-    <nav class="navbar desktop-nav banner-nav fixed-top navbar-expand-lg">
+    <nav class="navbar fixed-top navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand logo" href="#"><img src="assets/images/logo/logo.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
@@ -46,8 +45,10 @@
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><a class="navbar-brand logo" href="#"><img
+                                src="assets/images/logo/chatbot.png" alt=""></a></h5>
+                    <button type="button" class="cmn-btn-close btn-close" data-bs-dismiss="offcanvas"
+                        aria-label="Close"><i class="fa-regular fa-arrow-right"></i></button>
                 </div>
                 <div class="offcanvas-body align-items-center justify-content-between">
                     <ul class="navbar-nav m-auto">
@@ -55,7 +56,7 @@
                             <a class="nav-link active" aria-current="page" href="index.html">home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About us</a>
+                            <a class="nav-link" href="about.html">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">trade</a>
@@ -74,10 +75,20 @@
                     <form>
                         <ul class="nav-right d-flex align-items-center">
                             <li>
-                                <a class="login-btn" href="login.html">Login</a>
+                                <a href="login.html" class="login-btn">Login</a>
                             </li>
                             <li>
                                 <button type="button" class="get-start-btn" href="signup.html">Get Started</button>
+                            </li>
+                            <li>
+                                <a class="nav-link d-flex toggle-btn">
+                                    <i class="fa-regular fa-moon" id="moon" style="display: block;"></i>
+                                    <i class="far fa-sun" id="sun" style="display: none;"></i>
+                                    <div class="form-check form-switch" id="toggle-btn">
+                                        <input class="form-check-input" type="checkbox" role="switch"
+                                            id="flexSwitchCheckDefault">
+                                    </div>
+                                </a>
                             </li>
 
                         </ul>
@@ -120,11 +131,11 @@
             <div class="row ">
                 <div class="col">
                     <div class="breadcrumb-area">
-                        <h3>login</h3>
+                        <h3>Signup</h3>
                         <ul class="breadcrumb">
                             <li class="breadcrumb-item"><a href="home-1.html"><i class="fa-light fa-house"></i> Home</a>
                             </li>
-                            <li class="breadcrumb-item active" aria-current="page">Login</li>
+                            <li class="breadcrumb-item active" aria-current="page">Signup</li>
                         </ul>
                     </div>
                 </div>
@@ -138,14 +149,13 @@
     <!-- ---------------------------------------------------- -->
     <section class="login-signup-page">
         <div class="container">
-            <div class="row">
-                <div class="col-xl-5 col-lg-6 col-sm-10 mx-auto">
+            <div class="row g-5 justify-content-between align-items-center">
+                <div class="col-md-5">
                     <div class="login-signup-form">
                         <form>
                             <div class="form-title pb-4 text-center">
-                                <h3>Login Here</h3>
-                                <div class="description">Hey Enter your details to get sign in to your
-                                    account</div>
+                                <h3>Signup Here</h3>
+                                <div class="description">Hey Enter your details to get sign in to your account</div>
                             </div>
                             <div class="mb-4">
                                 <input type="text" class="form-control" id="exampleInputEmail1"
@@ -188,6 +198,11 @@
                         </form>
                     </div>
                 </div>
+                <div class="col-md-6">
+                    <div class="login-signup-thums">
+                        <img src="assets/images/login_signup/login-signup.png" alt="">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -196,35 +211,18 @@
     <!-- login-signup section end -->
     <!-- ---------------------------------------------------- -->
 
-    <!-- footer section start -->
-    <section class="footer-area pb-50 pt-50">
+    <!-- ---------------------------------------------------- -->
+    <!-- Footer Section start -->
+    <!-- ---------------------------------------------------- -->
+    <section class="footer-section pb-50">
         <div class="container">
-            <div class="newsletter-area">
-                <div class="row g-5 align-items-center">
-                    <div class="col-md-6">
-                        <h2 class="Newslatter-title mb-0">Connect With Smart AI Tools
-                        </h2>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="newsletter-inner">
-                            <form class="subscribe-form">
-                                <input type="text" placeholder="Enter your email address">
-                                <button><i class="fa-regular fa-arrow-right fa-beat"></i></button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <hr class="cmn-hr">
             <div class="row gy-4 gy-sm-5">
                 <div class="col-lg-4 col-sm-6">
                     <div class="footer-widget">
-                        <div class="widget_logo mb-30">
+                        <div class="widget-logo mb-30">
                             <a href="#nav_area"><img class="footer-logo" src="assets/images/logo/logo.png" alt=""></a>
                         </div>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur fuga odit
-                            excepturi,
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur fuga odit excepturi,
                             natus voluptate commodi qui sunt quisquam cupiditate molestiae?</p>
                         <div class="social-area mt-50">
                             <ul class="d-flex">
@@ -250,42 +248,53 @@
                 </div>
                 <div class="col-lg-3 col-sm-6 pt-sm-0 pt-3 ps-lg-5">
                     <div class="footer-widget">
-                        <h5>Support</h5>
+                        <h5>Company Policy</h5>
                         <ul>
-                            <li><a href="">Help Center</a></li>
-                            <li><a href="">Blog & Tutorial</a></li>
-                            <li><a href="">Pricing</a></li>
-                            <li><a href="">Student Discount</a></li>
+                            <li><a href="">Terms of use</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Refund Policy</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6 pt-sm-0 pt-3">
                     <div class="footer-widget">
-                        <h5>Contact Us</h5>
-                        <p>10714 163rd Pl, Orland Park, IL 60467, United States</p>
-                        <p>email@website.com</p>
-                        <p>354-4156745674</p>
+                        <h5>Newsletter</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nihil debitis</p>
+                        <form action="">
+                            <div class="col">
+                                <input type="email" class="form-control" id="inputEmail4"
+                                    placeholder="Your mail address">
+                                <button type="submit" class="cmn-btn w-100">Subscribe</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
             <hr class="cmn-hr">
+            <!-- Copyright-area-start -->
             <div class="copy-right-area">
-                <div class="row gy-4 ">
-                    <div class="col-sm-6 text-sm-start text-center">
-                        <p>Copyright © 2023 <a href="" class="highlight">Best Ai</a> All Rights Reserved</p>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="language text-sm-end text-center">
-                            <a href="" class="language">English</a>
-                            <a href="" class="language">Spanish</a>
-                            <a href="" class="language">Germany</a>
+                <div class="container">
+                    <div class="row gy-4 ">
+                        <div class="col-sm-6 text-sm-start text-center">
+                            <p>Copyright ©2023 <a class="highlight" href="index.html">Cryptos</a> All Rights Reserved
+                            </p>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="language text-sm-end text-center">
+                                <a href="" class="language">English</a>
+                                <a href="" class="language">Spanish</a>
+                                <a href="" class="language">Germany</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Copyright-area-end -->
         </div>
     </section>
-    <!-- footer section start -->
+    <!-- ---------------------------------------------------- -->
+    <!-- Footer Section end -->
+    <!-- ---------------------------------------------------- -->
 
 
 
