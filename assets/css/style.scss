@@ -3,7 +3,6 @@
 :root {
     --body-font: 'Prompt', sans-serif;
     --heading-font: 'Nunito', sans-serif;
-    // --heading-font: 'Raleway', sans-serif;
     --primary-color: #534FFF;
     --heading-color: #182122;
     --black: #182122;
@@ -157,13 +156,13 @@ textarea.form-control {
 .form-select {
     border-radius: 10px;
     background-color: var(--bg-color1);
-    border: 1px solid rgba(0,0,0,0);
-    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    height: 45px;
 }
 
 .form-control:focus,
 .form-select:focus {
-    box-shadow: 0 0 0 4px rgba(83,79,255,.1);
+    box-shadow: 0 0 0 4px rgba(83, 79, 255, .1);
     border: 1px solid var(--primary-color);
 }
 
@@ -293,7 +292,7 @@ span.select2.select2-container.select2-container--default {
 .breadcrumb {
     display: inline-flex;
     justify-content: center;
-    background: rgb(255,255,255, 0.5);
+    background: rgb(255, 255, 255, 0.5);
     padding: 5px 15px;
     border-radius: 8px;
     margin-top: 10px;
@@ -377,6 +376,12 @@ h2 {
 
 }
 
+@media (max-width: 991px) {
+    h2 {
+        font-size: 28px;
+    }
+}
+
 h3 {
     font-size: 32px;
     margin-bottom: 15px;
@@ -388,6 +393,12 @@ h4 {
     text-transform: capitalize;
     margin-bottom: 5px;
     font-weight: 700;
+}
+
+@media (max-width: 991px) {
+    h4 {
+        font-size: 22px;
+    }
 }
 
 h5 {
@@ -662,7 +673,8 @@ body::-webkit-scrollbar-thumb {
     font-family: var(--heading-font);
     border: 1px solid var(--primary-color);
     border-radius: 10px;
-    &:hover{
+
+    &:hover {
         background-color: var(--primary-color);
         color: var(--white);
     }
@@ -1295,7 +1307,7 @@ hr.divider:after {
         justify-content: center;
         font-size: 22px;
         border: 1px solid var(--primary-color);
-        border-radius: 8px;
+        border-radius: 10px;
     }
 
     .cmn-btn-close {
@@ -1303,7 +1315,7 @@ hr.divider:after {
         background: var(--primary-color);
         width: 40px;
         height: 40px;
-        border-radius: 8px;
+        border-radius: 10px;
         color: var(--white);
         padding: 0;
         margin: 0;
@@ -1373,6 +1385,8 @@ hr.divider:after {
 
 @media (max-width: 991px) {
     .navbar {
+        padding: 10px;
+
         .navbar-nav {
             .nav-link {
                 padding: 15px;
@@ -1381,6 +1395,10 @@ hr.divider:after {
 
         .nav-right {
             flex-direction: column;
+
+            li {
+                padding: 15px;
+            }
         }
     }
 
@@ -1462,7 +1480,7 @@ hr.divider:after {
         }
 
         margin-top: 50px;
-        width: 400px;
+        max-width: 400px;
 
         .cmn-btn {
             text-transform: initial;
@@ -1501,11 +1519,18 @@ hr.divider:after {
 @media (max-width: 767px) {
     .hero-area {
         text-align: center;
+
+        .hero-thum {
+            max-width: 300px;
+            margin: auto;
+        }
+
+        .hero-bottom {
+            margin: 50px auto 0;
+        }
     }
 
-    .hero-btn-area {
-        justify-content: center;
-    }
+
 }
 
 // Hero responsive end
@@ -1531,12 +1556,18 @@ hr.divider:after {
     background-position: center;
 
     .feature-mid-section {
-        position: absolute;
-        bottom: 0;
+        display: flex;
+        justify-content: center;
 
-        img {
-            max-width: 450px;
+        .feature-thum {
+            position: absolute;
+            bottom: 0;
+
+            img {
+                max-width: 450px;
+            }
         }
+
     }
 }
 
@@ -1544,24 +1575,19 @@ hr.divider:after {
 .feature-box {
     display: flex;
     margin-bottom: 50px;
-
-    .icon-box {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-right: 20px;
-        min-width: 70px;
-        width: 70px;
-        box-shadow: var(--shadow4);
-        height: 70px;
-        border-radius: 50%;
-    }
-
-    i {
-        color: var(--primary-color);
-        font-size: 35px;
-    }
-
+}
+.icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    width: 60px;
+    min-width: 60px;
+    height: 60px;
+    box-shadow: var(--shadow4);
+    border-radius: 50%;
+    color: var(--primary-color);
+    font-size: 28px;
 }
 
 .text-box {
@@ -1575,9 +1601,14 @@ hr.divider:after {
 // Feature responsive start
 
 @media (max-width: 991px) {
-    h2 {
-        font-size: 28px;
+
+    .icon-box {
+        min-width: 50px;
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
     }
+
 }
 
 // Feature responsive end
@@ -1610,19 +1641,11 @@ hr.divider:after {
         .about-item {
             display: flex;
             margin-bottom: 50px;
+            text-align: left;
 
             .icon-box {
-                width: 60px;
-                height: 60px;
-                text-align: center;
                 background-color: var(--primary-color);
-                border-radius: 50%;
                 color: #fff;
-                font-size: 24px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-right: 20px;
             }
         }
     }
@@ -1685,13 +1708,12 @@ hr.divider:after {
 }
 
 // How it works responsive start
-@media (max-width: 575px) {
-    h3 {
-        font-size: 18px;
-    }
-
-    .how-it-work .how-it-work-wrapper .section-devider-area {
-        display: none;
+@media (max-width: 767px) {
+    .how-it-work{
+        .btn-area{
+            display: flex;
+            justify-content: center;
+        }
     }
 }
 
@@ -1807,11 +1829,13 @@ hr.divider:after {
     padding-left: 118px;
     width: 100%
 }
-.right-content-testimonial .title-border{
-    &::before{
+
+.right-content-testimonial .title-border {
+    &::before {
         left: 0;
     }
-    &::after{
+
+    &::after {
         left: 18px;
     }
 }
@@ -1862,7 +1886,7 @@ hr.divider:after {
 }
 
 .feedback-inner-single .quote i {
-    color: #3661fc;
+    color: var(--primary-color);
     font-size: 56px;
     height: 49px
 }
@@ -1883,6 +1907,7 @@ hr.divider:after {
 .feedback-inner-single .profile-info {
     margin-top: 30px;
 }
+
 .feedback-inner-single h5 {
     font-size: 16px;
 }
@@ -1989,6 +2014,7 @@ hr.divider:after {
     padding: 10px;
     border-radius: 10px;
     box-shadow: var(--shadow4);
+
     &:hover {
         .img-box {
             border-radius: 10px;
@@ -2011,8 +2037,9 @@ hr.divider:after {
             height: 15vw;
         }
     }
-    .content-box{
-       padding: 5px; 
+
+    .content-box {
+        padding: 5px;
     }
 
     .blog-author {
@@ -2255,13 +2282,15 @@ hr.divider:after {
                 opacity: .7;
             }
         }
-        input[type=email]{
+
+        input[type=email] {
             margin: 30px 0 20px 0;
             background-color: transparent;
             border: none;
             border-bottom: 1px solid var(--border-color4);
             border-radius: 0;
-            &:focus{
+
+            &:focus {
                 border-bottom: 1px solid var(--primary-color);
                 box-shadow: none;
             }
@@ -2395,6 +2424,7 @@ hr.divider:after {
         padding: 20px;
         border-radius: 10px;
         background-color: var(--white);
+
         .form-label {
             text-transform: capitalize;
 
@@ -2444,9 +2474,10 @@ hr.divider:after {
 // ---------------------------------------------------- 
 // Map section start
 // ----------------------------------------------------
-.map-section{
+.map-section {
     margin-bottom: -15px;
 }
+
 // ---------------------------------------------------- 
 // Map section end
 // ----------------------------------------------------
@@ -2461,6 +2492,7 @@ hr.divider:after {
     background-size: cover;
 
     .login-signup-form {
+
         // padding: 40px;
         // background: var(--white);
         // border-radius: 10px;
@@ -2542,6 +2574,7 @@ hr.divider:after {
     background-image: url(../images/background/bg-1.png);
     background-position: center;
     background-size: cover;
+
     .blog-details {
         .thum-inner {
             position: relative;
@@ -2559,6 +2592,7 @@ hr.divider:after {
             display: flex;
             align-items: center;
             margin: 30px 0 20px 0;
+
             .author-img {
                 margin-right: 15px;
 
@@ -2573,6 +2607,7 @@ hr.divider:after {
 
     .blog-header {
         margin-bottom: 20px;
+
         h3 {
             margin-bottom: 0;
             font-weight: 600;
@@ -2743,6 +2778,7 @@ hr.divider:after {
     display: inline-block;
     border-radius: 10px;
     margin-top: 30px;
+
     .page-link {
         &:focus {
             background-color: var(--primary-color);

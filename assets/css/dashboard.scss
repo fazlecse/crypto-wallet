@@ -180,7 +180,7 @@ textarea.form-control {
     border-radius: 10px;
     background-color: var(--bg-color1);
     border: 1px solid transparent;
-    height: 40px;
+    height: 45px;
 }
 
 .form-control:disabled {
@@ -291,7 +291,7 @@ label {
 .select2-container .select2-selection--single,
 .select2-container .select2-selection--multiple {
     border: 1px solid var(--bg-color1);
-    height: 50px;
+    height: 45px;
     display: flex;
     align-items: center;
     background: var(--bg-color1);
@@ -1368,6 +1368,7 @@ hr.divider:after {
     }
 
     .dropdown-menu {
+        width: 350px;
         max-height: 30rem;
         min-width: 13rem;
         overflow-y: auto;

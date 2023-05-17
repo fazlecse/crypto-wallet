@@ -148,7 +148,7 @@ $(document).ready(function () {
             arrows: !1,
             focusOnSelect: !0,
             dots: !0,
-            autoplay: true,
+            autoplay: false,
             autoplaySpeed: 2000,
             appendDots: e(".custom-paging-testi"),
             responsive: [{
