@@ -150,7 +150,8 @@ $(document).ready(function () {
             dots: !0,
             autoplay: false,
             autoplaySpeed: 2000,
-            appendDots: e(".custom-paging-testi"),
+            // rtl: true,
+            appendDots: e(".custom-testimonial-pagination"),
             responsive: [{
                 breakpoint: 767,
                 settings: {
@@ -207,6 +208,20 @@ const previewImage = (id) => {
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
 
+// Dark theme start
+const toggleBtn = document.getElementById("toggle-btn");
+const body = document.querySelector("body");
+toggleBtn.addEventListener("click", function () {
+    document.body.classList.toggle("dark-theme");
+    if (document.body.classList.contains("dark-theme")) {
+        document.getElementById("moon").style.display = "none";
+        document.getElementById("sun").style.display = "block";
+    } else {
+        document.getElementById("moon").style.display = "block";
+        document.getElementById("sun").style.display = "none";
+    }
+});
+// Dark theme end
 
 
 

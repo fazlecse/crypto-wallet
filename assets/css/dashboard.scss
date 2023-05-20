@@ -212,16 +212,18 @@ textarea.form-control {
 label {
     text-transform: capitalize;
 }
-.rtl{
-    .form-switch{
+
+.rtl {
+    .form-switch {
         padding-left: 0;
         padding-right: 2.5em !important;
-        .form-check-input{
+
+        .form-check-input {
             margin-left: 0;
             margin-right: -2.5em !important;
         }
-    } 
-} 
+    }
+}
 
 .rtl .form-check {
     padding-left: auto;
@@ -1362,13 +1364,14 @@ hr.divider:after {
     margin-left: 0;
     margin-right: -30px;
 }
+
 .dropdown {
     .show i {
         color: var(--primary-color);
     }
 
     .dropdown-menu {
-        width: 350px;
+        width: 340px;
         max-height: 30rem;
         min-width: 13rem;
         overflow-y: auto;
@@ -1763,7 +1766,8 @@ hr.divider:after {
 .btn-area i {
     margin-left: 5px;
 }
-.rtl .btn-area i{
+
+.rtl .btn-area i {
     margin-left: 0;
     margin-right: 5px;
 }
@@ -1859,8 +1863,9 @@ hr.divider:after {
 // Card rtl end
 
 // Offcanvas start
-.offcanvas.offcanvas-end{
+.offcanvas.offcanvas-end {
     border-left: none !important;
+
     .offcanvas-title {
         font-size: 22px;
         font-weight: 700;
@@ -1869,27 +1874,31 @@ hr.divider:after {
 
 
 // Rtl Offcanvas start
-.rtl{
+.rtl {
     .offcanvas.offcanvas-end {
         transform: translateX(-100%);
         left: 0;
         right: auto;
     }
-    .offcanvas.show:not(.hiding), .offcanvas.showing{
+
+    .offcanvas.show:not(.hiding),
+    .offcanvas.showing {
         transform: none;
     }
-} 
+}
 
 // Rtl Offcanvas end
 // Dark theme offcanvas start
-.dark-theme{
-    .offcanvas.offcanvas-end{
+.dark-theme {
+    .offcanvas.offcanvas-end {
         background-color: var(--bg-color4);
-        .offcanvas-title{
+
+        .offcanvas-title {
             color: var(--white);
         }
     }
 }
+
 // Dark theme offcanvas end
 // Offcanvas end
 
@@ -2163,7 +2172,8 @@ hr.divider:after {
 }
 
 .header-nav .nav-profile img {
-    max-height: 36px;
+    height: 36px;
+    width: 36px;
 }
 
 .header-nav .nav-profile span {
@@ -2282,12 +2292,14 @@ hr.divider:after {
     background-color: var(--bg-color1);
     border-radius: 8px;
 }
-.header-nav .profile .dropdown-header .profile-thum{
+
+.header-nav .profile .dropdown-header .profile-thum {
     max-width: 36px;
     max-height: 36px;
     margin-right: 10px;
 }
-.header-nav .profile .dropdown-header .profile-thum img{
+
+.header-nav .profile .dropdown-header .profile-thum img {
     border-radius: 50%;
 }
 
@@ -2334,11 +2346,13 @@ hr.divider:after {
         margin-right: 0;
         margin-left: 10px;
     }
-    .profile .dropdown-header .profile-thum{
+
+    .profile .dropdown-header .profile-thum {
         margin-right: 0;
         margin-left: 10px;
     }
-    li.dropdown-header.d-flex.justify-content-center.text-start{
+
+    li.dropdown-header.d-flex.justify-content-center.text-start {
         text-align: right !important;
     }
 }
@@ -2647,13 +2661,14 @@ hr.divider:after {
             margin-left: 5px;
         }
 
-        .nav-content a{
+        .nav-content a {
             padding: 10px 40px 10px 0;
+
             i {
                 margin-right: 0;
                 margin-left: 8px;
             }
-        } 
+        }
     }
 }
 
@@ -3601,24 +3616,111 @@ hr.divider:after {
         }
     }
 }
+
 // Dark theme transections section start
-.dark-theme{
-    .transections-section{
-        .section-header h5{
+.dark-theme {
+    .transections-section {
+        .section-header h5 {
             color: var(--white);
         }
-        .list-area{
+
+        .list-area {
             border: 1px solid var(--border-color4);
-            li{
+
+            li {
                 color: var(--white);
-                &:not(:last-child){
+
+                &:not(:last-child) {
                     border-bottom: 1px solid var(--border-color4);
                 }
             }
-        } 
-    }   
+        }
+    }
 }
+
 // Dark theme transections section end
 // ----------------------------------------------------
 // Transections section start
+// ----------------------------------------------------
+
+// ----------------------------------------------------
+// Pagination section start
+// ----------------------------------------------------
+.pagination-section {
+    margin-top: 30px;
+    display: flex;
+    justify-content: end;
+    nav{
+        padding: 10px 7px;
+        background-color: var(--white);
+        box-shadow: var(--shadow2);
+        border-radius: 10px;
+
+    }
+
+    .page-item {
+        .page-link {
+            margin: 5px;
+
+            &:focus {
+                background-color: var(--primary-color);
+                color: var(--white);
+                outline: 0;
+                box-shadow: none;
+            }
+        }
+    }
+
+    ul {
+        li {
+            a {
+                width: 40px;
+                height: 40px;
+                border-radius: 8px !important;
+                color: var(--heading-color);
+                background-color: var(--white);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // margin: 0 10px;
+                border: 1px solid var(--primary-color);
+                box-shadow: none;
+
+                &:hover {
+                    background-color: var(--primary-color);
+                    color: var(--white) !important;
+                    border: 1px solid var(--primary-color);
+                }
+            }
+
+            i {
+                display: flex;
+            }
+        }
+
+        .active {
+            a {
+                background-color: var(--primary-color);
+                color: var(--white);
+                border-color: var(--primary-color);
+            }
+        }
+    }
+}
+
+// Pagination rtl start
+.rtl .pagination-section ul li i {
+    transform: rotate(180deg);
+}
+
+// Pagination rtl end
+// Dark theme paginaiton start
+.dark-theme{
+    .pagination-section nav{
+        background-color:  var(--bg-color4);
+    }
+}
+// Dark theme paginaiton end
+// ----------------------------------------------------
+// Pagination section end
 // ----------------------------------------------------
