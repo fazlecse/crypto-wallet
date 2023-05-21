@@ -19,9 +19,10 @@
     --yellow: #fcc013;
     --bg-color1: #F5F4F7;
     --bg-color2: #EEF5FF;
-    --bg-color3: #182122;
-    --bg-color4: #242C2E;
-    --bg-color5: #FAFAFA;
+    --bg-color3: #1E2022;
+    --bg-color4: #25282A;
+    --bg-color5: #242C2E;
+    --bg-color6: #2F3235;
     --body-color: #707070;
     --border-color1: #f2f2f2;
     --border-color2: #e1e1e1;
@@ -34,12 +35,19 @@
     --transition: all .3s ease-in-out;
 }
 
+#sun {
+    display: none;
+}
+
 .dark-theme {
     background-color: var(--bg-color3);
 
     h1,
     h2,
-    h4 {
+    h3,
+    h4,
+    h5,
+    h6 {
         color: var(--white);
     }
 
@@ -47,9 +55,10 @@
         color: var(--grayish-blue);
     }
 
-    .form-control {
+    .form-control,
+    .form-select {
         color: var(--white);
-        border: none;
+        border: 1px solid var(--bg-color3);
         background-color: var(--bg-color3);
 
         &:focus {
@@ -59,6 +68,10 @@
         &::placeholder {
             color: var(--white);
         }
+    }
+
+    .input-group-text {
+        background: var(--bg-color4);
     }
 
     .search-form button {
@@ -77,8 +90,15 @@
     .icon-box {
         background-color: var(--bg-color3);
     }
-    .feedback-inner-item .ratings{
+
+    .feedback-inner-item .ratings {
         background: var(--bg-color4);
+    }
+
+    .cmn-btn3 {
+        background: var(--bg-color6);
+        border: 1px solid var(--bg-color3);
+        color: var(--white);
     }
 
 
@@ -189,9 +209,6 @@ textarea.form-control {
     height: initial;
 }
 
-.form-control {
-    color: var(--black) !important;
-}
 
 .form-select {
     color: var(--body-color);
@@ -241,13 +258,21 @@ textarea.form-control {
     background-repeat: no-repeat;
 }
 
+.input-group {
+    height: 45px;
+    box-shadow: var(--shadow2);
+    border-radius: 8px;
+}
+
 .input-group-text {
-    width: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-size: 22px;
+    color: var(--primary-color);
+    width: 50px;
     border: none;
-    background: var(--secondary-color);
+    border-radius: 0;
+    display: flex;
+    justify-content: center;
+    background: transparent;
 }
 
 // Select2 start
@@ -543,6 +568,7 @@ body::-webkit-scrollbar-thumb {
 // ---------------------------------------------------- 
 // Reuseble style section start
 // ----------------------------------------------------
+// Offcanvaes section start 
 .offcanvas {
     background: var(--bg-color1);
 }
@@ -559,6 +585,17 @@ body::-webkit-scrollbar-thumb {
 .offcanvas-backdrop.show {
     opacity: 1;
 }
+
+// Dark theme offcanvas start 
+.dark-theme {
+    offcanvas.offcanvas-end {
+        background-color: var(--bg-color6);
+    }
+}
+
+// Dark theme offcanvas end
+// Offcanvaes section end
+
 
 .animation1 {
     position: relative;
@@ -943,7 +980,7 @@ section {
     color: var(--white);
     margin-right: 14px;
     border-radius: 10px;
-    background: var(--bg-color4);
+    background: var(--bg-color6);
 
     &:hover {
         box-shadow: 0 1px 0 #9da9cd, 0 6px 12px rgba(9, 30, 66, .2);
@@ -1345,7 +1382,6 @@ hr.divider:after {
 }
 
 .navbar {
-    // background: var(--white);
     transition: all 0.5s ease-in-out;
     padding: 0;
     z-index: 9999;
@@ -1361,6 +1397,7 @@ hr.divider:after {
         font-size: 22px;
         border: 1px solid var(--primary-color);
         border-radius: 10px;
+        box-shadow: none;
     }
 
     .cmn-btn-close {
@@ -1471,7 +1508,7 @@ hr.divider:after {
 .dark-theme {
     .navbar {
         &.active {
-            background-color: var(--bg-color4);
+            background-color: var(--bg-color6);
         }
 
         .navbar-nav {
@@ -1544,6 +1581,22 @@ hr.divider:after {
     }
 }
 
+// Dark theme bottom nav section start 
+.dark-theme {
+    .bottom-nav {
+        background-color: var(--bg-color6);
+
+        .nav-item {
+            .nav-link {
+                color: var(--white);
+            }
+        }
+    }
+
+
+}
+
+// Dark theme bottom nav section end
 // ---------------------------------------------------- 
 // Bottom Mobile Tab nav section end
 // ----------------------------------------------------
@@ -2393,7 +2446,7 @@ hr.divider:after {
     .accordion-button {
         color: var(--heading-color);
         font-weight: 700;
-        font-size: 20px;
+        font-size: 18px;
 
         &:focus {
             box-shadow: none;
@@ -2463,20 +2516,24 @@ hr.divider:after {
 
 // Faq rtl end
 // Dark theme faq section start
-.dark-theme{
-    .faq-section{
+.dark-theme {
+    .faq-section {
         background: var(--bg-color4);
-        .accordion-button{
+
+        .accordion-button {
             color: var(--white);
-            &:not(.collapsed){
+
+            &:not(.collapsed) {
                 color: var(--primary-color);
             }
         }
-        .accordion-item{
+
+        .accordion-item {
             border-bottom: 1px solid var(--border-color4);
         }
     }
 }
+
 // Dark theme faq section end
 // ---------------------------------------------------- 
 // Faq section end
@@ -2617,11 +2674,22 @@ hr.divider:after {
 
 // Blog responsive end
 // Dark theme blog section start
-.dark-theme{
-    .blog-section{
+.dark-theme {
+    .blog-section {
         background: var(--bg-color3);
+
+        .blog-box {
+            background-color: var(--bg-color4);
+            box-shadow: var(--shadow2);
+
+            .blog-author .author-info span {
+                color: var(--grayish-blue);
+            }
+        }
     }
+
 }
+
 // Dark theme blog section end
 // ---------------------------------------------------- 
 // Blog section end
@@ -2751,7 +2819,7 @@ hr.divider:after {
 
 
 .footer-section {
-    background: var(--bg-color3);
+    background: var(--bg-color5);
 
     .footer-widget {
         h5 {
@@ -2910,6 +2978,18 @@ hr.divider:after {
 }
 
 // Responsive banner section end
+// Dark theme banner section start
+.dark-theme {
+    .banner-area {
+        background: var(--bg-color5);
+    }
+
+    .banner-area h3 {
+        color: var(--white);
+    }
+}
+
+// Dark theme banner section end
 // ---------------------------------------------------- 
 // Banner section end
 // ----------------------------------------------------
@@ -2967,7 +3047,18 @@ hr.divider:after {
 }
 
 // Contact rtl end
+// Dark theme contact section start 
+.dark-theme {
+    .contact-section {
+        background: var(--bg-color3);
 
+        .contact-message-area {
+            background-color: var(--bg-color4);
+        }
+    }
+}
+
+// Dark theme contact section end
 // ---------------------------------------------------- 
 // Contact section end
 // ----------------------------------------------------
@@ -2976,6 +3067,11 @@ hr.divider:after {
 // ----------------------------------------------------
 .map-section {
     margin-bottom: -15px;
+
+    iframe {
+        width: 100%;
+        height: 450px;
+    }
 }
 
 // ---------------------------------------------------- 
@@ -2993,9 +3089,6 @@ hr.divider:after {
 
     .login-signup-form {
 
-        // padding: 40px;
-        // background: var(--white);
-        // border-radius: 10px;
         .form-title {
             .description {
                 font-size: 16px;
@@ -3006,15 +3099,6 @@ hr.divider:after {
             }
         }
 
-        .form-control {
-            height: 45px;
-            background: transparent;
-            border: 1px solid var(--border-color2);
-
-            &:focus {
-                border-color: var(--primary-color);
-            }
-        }
 
         .cmn-btn {
             height: 45px;
@@ -3060,6 +3144,14 @@ hr.divider:after {
 }
 
 // Rtl login signup page end
+// Dark theme login signup section start
+.dark-theme {
+    .login-signup-page {
+        background: var(--bg-color4);
+    }
+}
+
+// Dark theme login signup section end
 // ---------------------------------------------------- 
 // Login Signup section end
 // ----------------------------------------------------
@@ -3181,32 +3273,13 @@ hr.divider:after {
         margin-bottom: 30px;
     }
 
-    .search-area {
-        padding: 0;
-        margin-bottom: 60px;
-        border-radius: 0;
-    }
+    .input-group-search {
+        margin-bottom: 30px;
 
-    .input-group {
-        background: var(--bg-color1);
-        box-shadow: var(--shadow2);
-        border-radius: 8px;
-    }
-
-    .form-control {
-        height: 50px;
-        border: 1px solid transparent;
-        background-color: var(--white);
-    }
-
-    .input-group-text {
-        font-size: 25px;
-        color: var(--primary-color);
-        width: 50px;
-        border: none;
-        border-radius: 0;
-        display: flex;
-        justify-content: center;
+        .form-control {
+            border: 1px solid transparent;
+            background-color: var(--white);
+        }
     }
 
     input[type="text"] {
@@ -3271,7 +3344,52 @@ hr.divider:after {
 }
 
 // Blog details rtl end
+// Dark theme blog details section start 
+.dark-theme {
+    .blog-details-section {
+        background: var(--bg-color3);
 
+        .blog-sidebar {
+            background: var(--bg-color4);
+        }
+
+        .blog-sidebar {
+            .form-control {
+                background: var(--bg-color6);
+            }
+
+            .blog-widget-area {
+                .blog-widget-item {
+                    background: var(--bg-color6);
+                }
+
+                .blog-widget-content .blog-title {
+                    color: var(--white);
+
+                    &:hover {
+                        color: var(--primary-color);
+                    }
+                }
+            }
+        }
+
+        .categories-area {
+            background: var(--bg-color6);
+
+            li a {
+                color: var(--white);
+
+                &:hover {
+                    color: var(--primary-color);
+                }
+            }
+        }
+    }
+
+
+}
+
+// Dark theme blog details section end
 // ---------------------------------------------------- 
 // Blog details section end
 // ----------------------------------------------------
@@ -3281,70 +3399,51 @@ hr.divider:after {
 // Pagination section start
 // ----------------------------------------------------
 .pagination-section {
-    margin-top: 30px;
+    margin-top: 50px;
     display: flex;
     justify-content: end;
 
     nav {
         padding: 10px 7px;
-        background-color: var(--bg-color1);
-        box-shadow: var(--shadow2);
+        background-color: rgb(255, 255, 255, 0.5);
         border-radius: 10px;
 
-    }
+        .pagination {
+            .page-item {
+                .page-link {
+                    margin: 5px;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 8px !important;
+                    color: var(--heading-color);
+                    background-color: var(--white);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid var(--border-color2);
+                    box-shadow: none;
 
-    .page-item {
-        .page-link {
-            margin: 5px;
+                    &:hover,
+                    &:focus {
+                        background-color: var(--primary-color);
+                        color: var(--white);
+                        border: 1px solid var(--primary-color);
+                    }
+                }
 
-            &:focus {
-                background-color: var(--primary-color);
-                color: var(--white);
-                outline: 0;
-                box-shadow: none;
-            }
-        }
-    }
-
-    ul {
-        li {
-            a {
-                width: 40px;
-                height: 40px;
-                border-radius: 8px !important;
-                color: var(--heading-color);
-                background-color: var(--white);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                // margin: 0 10px;
-                border: 1px solid var(--primary-color);
-                box-shadow: none;
-
-                &:hover {
+                &.active .page-link {
                     background-color: var(--primary-color);
-                    color: var(--white) !important;
-                    border: 1px solid var(--primary-color);
+                    color: var(--white);
+                    border-color: var(--primary-color);
                 }
             }
-
-            i {
-                display: flex;
-            }
         }
 
-        .active {
-            a {
-                background-color: var(--primary-color);
-                color: var(--white);
-                border-color: var(--primary-color);
-            }
-        }
     }
 }
 
 // Pagination rtl start
-.rtl .pagination-section ul li i {
+.rtl .pagination-section nav .pagination .page-item .page-link i {
     transform: rotate(180deg);
 }
 
@@ -3353,7 +3452,28 @@ hr.divider:after {
 .dark-theme {
     .pagination-section nav {
         background-color: var(--bg-color4);
+
+        .pagination {
+            .page-item {
+                .page-link {
+                    background: var(--bg-color6);
+                    border: 1px solid var(--bg-color3);
+                    color: var(--white);
+
+                    &:hover,
+                    &:focus {
+                        background: var(--primary-color);
+                    }
+                }
+
+                &.active .page-link {
+                    background: var(--primary-color);
+                }
+            }
+        }
     }
+
+
 }
 
 // Dark theme paginaiton end

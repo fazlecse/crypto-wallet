@@ -16,8 +16,10 @@
   --lime-green: #40b781;
   --bg-color1: #F5F4F7;
   --bg-color2: #EEF5FF;
-  --bg-color3: #182122;
-  --bg-color4: #242C2E;
+  --bg-color3: #1E2022;
+  --bg-color4: #25282A;
+  --bg-color5: #242C2E;
+  --bg-color6: #2F3235;
   --body-color: #707070;
   --border-color1: #f2f2f2;
   --border-color2: #e1e1e1;
@@ -34,7 +36,7 @@
 }
 .dark-theme .form-control {
   color: var(--white);
-  border: none;
+  border: 1px solid var(--border-color3);
   background-color: var(--bg-color3);
 }
 .dark-theme .form-control:focus {
@@ -47,6 +49,11 @@
   color: var(--white);
 }
 .dark-theme .search-form button {
+  color: var(--white);
+}
+.dark-theme .cmn-btn3 {
+  background-color: var(--bg-color6);
+  border: 1px solid var(--border-color3);
   color: var(--white);
 }
 
@@ -283,7 +290,7 @@ label {
 .select2-container .select2-selection--single:focus,
 .select2-container .select2-selection--multiple:focus {
   border: 1px solid var(--primary-color);
-  box-shadow: 0 0 0 4px rgba(5, 160, 129, 0.1);
+  box-shadow: 0 0 0 4px rgba(83, 79, 255, 0.1);
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow {
@@ -1692,7 +1699,7 @@ hr.divider:after {
 }
 
 .dark-theme .bottom-nav {
-  background-color: var(--bg-color4);
+  background-color: var(--bg-color6);
 }
 .dark-theme .bottom-nav .nav-item .nav-link {
   color: var(--white);
@@ -1744,12 +1751,12 @@ hr.divider:after {
   color: var(--heading-color);
 }
 
-.header .search-bar {
+.search-bar {
   min-width: 360px;
   padding: 0 20px;
   margin-left: auto;
 }
-.header .search-bar .form-control {
+.search-bar .form-control {
   height: 50px;
 }
 
@@ -1777,11 +1784,11 @@ hr.divider:after {
   width: 100%;
 }
 
-.header .search-form input:focus {
+.search-form input:focus {
   border: 1px solid var(--primary-color);
 }
 
-.header .search-form button {
+.search-form button {
   border: 0;
   padding: 0;
   margin-left: -30px;
@@ -1807,14 +1814,11 @@ hr.divider:after {
 }
 
 .dark-theme .header {
-  background-color: var(--bg-color3);
+  background-color: var(--bg-color4);
   border-bottom: 1px solid var(--border-color3);
 }
 .dark-theme .header .toggle-sidebar-btn {
   color: var(--white);
-}
-.dark-theme .header .search-form .form-control {
-  background-color: var(--bg-color4);
 }
 
 /*--------------------------------------------------------------
@@ -2333,8 +2337,8 @@ hr.divider:after {
 }
 
 .dark-theme .sidebar {
-  background-color: var(--bg-color3);
-  border: 1px solid var(--bg-color3);
+  background-color: var(--bg-color4);
+  border: 1px solid var(--border-color3);
 }
 .dark-theme .sidebar .sidebar-nav .nav-link {
   color: var(--white);
@@ -2851,7 +2855,7 @@ hr.divider:after {
 }
 .dark-theme .cmn-table table thead tr th {
   color: var(--white);
-  background-color: var(--bg-color3);
+  background-color: var(--bg-color6);
 }
 
 .account-settings-navbar {
@@ -3000,26 +3004,17 @@ hr.divider:after {
 }
 
 .pagination-section {
-  margin-top: 30px;
+  margin-top: 50px;
   display: flex;
   justify-content: end;
 }
 .pagination-section nav {
   padding: 10px 7px;
-  background-color: var(--white);
-  box-shadow: var(--shadow2);
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 10px;
 }
-.pagination-section .page-item .page-link {
+.pagination-section nav .pagination .page-item .page-link {
   margin: 5px;
-}
-.pagination-section .page-item .page-link:focus {
-  background-color: var(--primary-color);
-  color: var(--white);
-  outline: 0;
-  box-shadow: none;
-}
-.pagination-section ul li a {
   width: 40px;
   height: 40px;
   border-radius: 8px !important;
@@ -3028,27 +3023,35 @@ hr.divider:after {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid var(--primary-color);
+  border: 1px solid var(--border-color2);
   box-shadow: none;
 }
-.pagination-section ul li a:hover {
+.pagination-section nav .pagination .page-item .page-link:hover, .pagination-section nav .pagination .page-item .page-link:focus {
   background-color: var(--primary-color);
-  color: var(--white) !important;
+  color: var(--white);
   border: 1px solid var(--primary-color);
 }
-.pagination-section ul li i {
-  display: flex;
-}
-.pagination-section ul .active a {
+.pagination-section nav .pagination .page-item.active .page-link {
   background-color: var(--primary-color);
   color: var(--white);
   border-color: var(--primary-color);
 }
 
-.rtl .pagination-section ul li i {
+.rtl .pagination-section nav .pagination .page-item .page-link i {
   transform: rotate(180deg);
 }
 
 .dark-theme .pagination-section nav {
   background-color: var(--bg-color4);
+}
+.dark-theme .pagination-section nav .pagination .page-item .page-link {
+  background: var(--bg-color6);
+  border: 1px solid var(--bg-color3);
+  color: var(--white);
+}
+.dark-theme .pagination-section nav .pagination .page-item .page-link:hover, .dark-theme .pagination-section nav .pagination .page-item .page-link:focus {
+  background: var(--primary-color);
+}
+.dark-theme .pagination-section nav .pagination .page-item.active .page-link {
+  background: var(--primary-color);
 }

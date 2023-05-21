@@ -40,7 +40,7 @@
             <a class="navbar-brand logo" href="index.html"><img src="assets/images/logo/logo.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar">
-                <i class="fa-regular fa-bars-staggered"></i>
+                <i class="fa-light fa-list"></i>
             </button>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
@@ -48,7 +48,7 @@
                     <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><a class="navbar-brand" href="index.html"><img
                                 class="logo" src="assets/images/logo/logo.png" alt=""></a></h5>
                     <button type="button" class="cmn-btn-close btn-close" data-bs-dismiss="offcanvas"
-                        aria-label="Close"><i class="fa-regular fa-arrow-right"></i></button>
+                        aria-label="Close"><i class="fa-light fa-arrow-right"></i></button>
                 </div>
                 <div class="offcanvas-body align-items-center justify-content-between">
                     <ul class="navbar-nav m-auto">
@@ -81,10 +81,9 @@
                                 <button type="button" class="get-start-btn" href="signup.html">Get Started</button>
                             </li>
                             <li>
-                                <a class="nav-link d-flex toggle-btn">
-                                    <i class="fa-regular fa-moon" id="moon" style="display: block;"></i>
-                                    <i class="far fa-sun" id="sun" style="display: none;"></i>
-
+                                <a id="toggle-btn" class="nav-link d-flex toggle-btn">
+                                    <i class="fa-light fa-moon" id="moon"></i>
+                                    <i class="fa-light fa-sun" id="sun"></i>
                                 </a>
                             </li>
 
@@ -168,7 +167,9 @@
                         </div>
 
                     </div>
-                    <div class="pagination-section pt-50 pb-50">
+                    <!-- pagination section start -->
+                    <!-- -------------------------------------------------------- -->
+                    <div class="pagination-section">
                         <nav aria-label="...">
                             <ul class="pagination">
                                 <li class="page-item">
@@ -185,10 +186,13 @@
                             </ul>
                         </nav>
                     </div>
+                    <!-- -------------------------------------------------------- -->
+                    <!-- pagination section end -->
+                    <!-- -------------------------------------------------------- -->
                 </div>
                 <div class="col-lg-5 order-1 order-lg-2">
                     <div class="blog-sidebar position-sticky">
-                        <div class="search-area d-flex align-items-center mb-40">
+                        <div class="input-group-search d-flex align-items-center mb-40">
                             <div class="input-group">
                                 <input type="text" class="form-control" placeholder="Search Here..."
                                     aria-label="Username" aria-describedby="basic-addon1">
@@ -197,7 +201,7 @@
                             </div>
                         </div>
                         <div class="section-header">
-                            <h3>Recent Post</h3>
+                            <h4>Recent Post</h4>
                         </div>
                         <div class="blog-widget-area">
                             <a href="" class="blog-widget-item">
@@ -228,7 +232,7 @@
 
                             <div class="categories-area mt-40" data-aos="fade-up">
                                 <div class="section-header">
-                                    <h3 class="mb-20">Categories</h3>
+                                    <h4 class="mb-20">Categories</h4>
                                 </div>
                                 <ul class="categories_list">
                                     <li><a href=""><span>Household Moving</span> <span class="highlight">(20)</span></a>

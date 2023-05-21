@@ -40,7 +40,7 @@
             <a class="navbar-brand logo" href="index.html"><img src="assets/images/logo/logo.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar">
-                <i class="fa-regular fa-bars-staggered"></i>
+                <i class="fa-light fa-list"></i>
             </button>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
@@ -48,7 +48,7 @@
                     <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><a class="navbar-brand" href="index.html"><img
                                 class="logo" src="assets/images/logo/logo.png" alt=""></a></h5>
                     <button type="button" class="cmn-btn-close btn-close" data-bs-dismiss="offcanvas"
-                        aria-label="Close"><i class="fa-regular fa-arrow-right"></i></button>
+                        aria-label="Close"><i class="fa-light fa-arrow-right"></i></button>
                 </div>
                 <div class="offcanvas-body align-items-center justify-content-between">
                     <ul class="navbar-nav m-auto">
@@ -81,10 +81,9 @@
                                 <button type="button" class="get-start-btn" href="signup.html">Get Started</button>
                             </li>
                             <li>
-                                <a class="nav-link d-flex toggle-btn">
-                                    <i class="fa-regular fa-moon" id="moon" style="display: block;"></i>
-                                    <i class="far fa-sun" id="sun" style="display: none;"></i>
-
+                                <a id="toggle-btn" class="nav-link d-flex toggle-btn">
+                                    <i class="fa-light fa-moon" id="moon"></i>
+                                    <i class="fa-light fa-sun" id="sun"></i>
                                 </a>
                             </li>
 
@@ -103,19 +102,19 @@
     <ul class="nav bottom-nav fixed-bottom d-lg-none">
         <li class="nav-item">
             <a class="nav-link" data-bs-toggle="offcanvas" role="button" aria-controls="offcanvasExample"
-                href="#offcanvasNavbar" aria-current="page" href="#"><i class="fa-regular fa-bars-staggered"></i></a>
+                href="#offcanvasNavbar" aria-current="page" href="#"><i class="fa-light fa-list"></i></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fa-regular fa-chart-line-up"></i></a>
+            <a class="nav-link" href="#"><i class="fa-light fa-chart-line-up"></i></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link active" href="#"><i class="fa-regular fa-house"></i></a>
+            <a class="nav-link active" href="#"><i class="fa-light fa-house"></i></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fa-regular fa-address-book"></i></a>
+            <a class="nav-link" href="#"><i class="fa-light fa-address-book"></i></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fa-regular fa-user"></i></a>
+            <a class="nav-link" href="#"><i class="fa-light fa-user"></i></a>
         </li>
     </ul>
     <!-------------------------------------------------------->
@@ -156,16 +155,20 @@
                             </div>
                             <div class="row g-4">
                                 <div class="col-12">
-                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First Name">
+                                    <input type="text" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" placeholder="First Name">
                                 </div>
                                 <div class="col-12">
-                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Last Name">
+                                    <input type="text" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" placeholder="Last Name">
                                 </div>
                                 <div class="col-12">
-                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="User Name">
+                                    <input type="text" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" placeholder="User Name">
                                 </div>
                                 <div class="col-12">
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" placeholder="Email">
                                 </div>
                                 <div class="col-md-6">
                                     <select class="form-select" aria-label="Default select example">
@@ -176,24 +179,27 @@
                                     </select>
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your phone number">
+                                    <input type="text" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" placeholder="Your phone number">
                                 </div>
                                 <div class="col-12">
-                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                    <input type="password" class="form-control" id="exampleInputPassword1"
+                                        placeholder="Password">
                                 </div>
                                 <div class="col-12">
-                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirm Password">
+                                    <input type="password" class="form-control" id="exampleInputPassword1"
+                                        placeholder="Confirm Password">
                                 </div>
                                 <div class="col-12">
-                                   <div class="form-check d-flex justify-content-between">
-                                    <div class="check">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                        <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                                    <div class="form-check d-flex justify-content-between">
+                                        <div class="check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                                        </div>
+                                        <div class="forgot highlight">
+                                            <a href="">Forgot password?</a>
+                                        </div>
                                     </div>
-                                    <div class="forgot highlight">
-                                        <a href="">Forgot password?</a>
-                                    </div>
-                                   </div>
                                 </div>
                             </div>
                             <button type="submit" class="btn cmn-btn mt-30 w-100">signup</button>

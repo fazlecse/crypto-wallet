@@ -17,8 +17,10 @@
     --lime-green: #40b781;
     --bg-color1: #F5F4F7;
     --bg-color2: #EEF5FF;
-    --bg-color3: #182122;
-    --bg-color4: #242C2E;
+    --bg-color3: #1E2022;
+    --bg-color4: #25282A;
+    --bg-color5: #242C2E;
+    --bg-color6: #2F3235;
     --body-color: #707070;
     --border-color1: #f2f2f2;
     --border-color2: #e1e1e1;
@@ -31,9 +33,10 @@
 }
 
 .dark-theme {
+    background-color: var(--bg-color3);
     .form-control {
         color: var(--white);
-        border: none;
+        border: 1px solid var(--border-color3);
         background-color: var(--bg-color3);
 
         &:focus {
@@ -48,8 +51,12 @@
     .search-form button {
         color: var(--white);
     }
+    .cmn-btn3{
+        background-color: var(--bg-color6);
+        border: 1px solid var(--border-color3);
+        color: var(--white);
+    }
 
-    background-color: var(--bg-color3);
 
 }
 
@@ -311,7 +318,7 @@ label {
 .select2-container .select2-selection--single:focus,
 .select2-container .select2-selection--multiple:focus {
     border: 1px solid var(--primary-color);
-    box-shadow: 0 0 0 4px rgba(5, 160, 129, .1);
+    box-shadow: 0 0 0 4px rgba(83, 79, 255, 0.1);
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow {
@@ -2000,7 +2007,7 @@ hr.divider:after {
 // Dark theme bottom nav start
 .dark-theme {
     .bottom-nav {
-        background-color: var(--bg-color4);
+        background-color: var(--bg-color6);
 
         .nav-item {
             .nav-link {
@@ -2062,7 +2069,7 @@ hr.divider:after {
     color: var(--heading-color);
 }
 
-.header .search-bar {
+.search-bar {
     min-width: 360px;
     padding: 0 20px;
     margin-left: auto;
@@ -2098,11 +2105,11 @@ hr.divider:after {
     width: 100%;
 }
 
-.header .search-form input:focus {
+.search-form input:focus {
     border: 1px solid var(--primary-color);
 }
 
-.header .search-form button {
+.search-form button {
     border: 0;
     padding: 0;
     margin-left: -30px;
@@ -2134,16 +2141,13 @@ hr.divider:after {
 // Header dark theme start
 .dark-theme {
     .header {
-        background-color: var(--bg-color3);
+        background-color: var(--bg-color4);
         border-bottom: 1px solid var(--border-color3);
 
         .toggle-sidebar-btn {
             color: var(--white);
         }
 
-        .search-form .form-control {
-            background-color: var(--bg-color4);
-        }
     }
 }
 
@@ -2750,16 +2754,16 @@ hr.divider:after {
 }
 
 // Rtl sidebar nav bottom end
-#sun {
-    display: none;
-}
 
 // Sidebar nav bottom end
 // Dark theme sidebar start
+#sun {
+    display: none;
+}
 .dark-theme {
     .sidebar {
-        background-color: var(--bg-color3);
-        border: 1px solid var(--bg-color3);
+        background-color: var(--bg-color4);
+        border: 1px solid var(--border-color3);
 
         .sidebar-nav {
             .nav-link {
@@ -3409,7 +3413,7 @@ hr.divider:after {
                 tr {
                     th {
                         color: var(--white);
-                        background-color: var(--bg-color3);
+                        background-color: var(--bg-color6);
                     }
                 }
             }
@@ -3647,79 +3651,83 @@ hr.divider:after {
 // Pagination section start
 // ----------------------------------------------------
 .pagination-section {
-    margin-top: 30px;
+    margin-top: 50px;
     display: flex;
     justify-content: end;
-    nav{
+
+    nav {
         padding: 10px 7px;
-        background-color: var(--white);
-        box-shadow: var(--shadow2);
+        background-color: rgb(255, 255, 255, 0.5);
         border-radius: 10px;
 
-    }
+        .pagination {
+            .page-item {
+                .page-link {
+                    margin: 5px;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 8px !important;
+                    color: var(--heading-color);
+                    background-color: var(--white);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid var(--border-color2);
+                    box-shadow: none;
 
-    .page-item {
-        .page-link {
-            margin: 5px;
+                    &:hover,
+                    &:focus {
+                        background-color: var(--primary-color);
+                        color: var(--white);
+                        border: 1px solid var(--primary-color);
+                    }
+                }
 
-            &:focus {
-                background-color: var(--primary-color);
-                color: var(--white);
-                outline: 0;
-                box-shadow: none;
-            }
-        }
-    }
-
-    ul {
-        li {
-            a {
-                width: 40px;
-                height: 40px;
-                border-radius: 8px !important;
-                color: var(--heading-color);
-                background-color: var(--white);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                // margin: 0 10px;
-                border: 1px solid var(--primary-color);
-                box-shadow: none;
-
-                &:hover {
+                &.active .page-link {
                     background-color: var(--primary-color);
-                    color: var(--white) !important;
-                    border: 1px solid var(--primary-color);
+                    color: var(--white);
+                    border-color: var(--primary-color);
                 }
             }
-
-            i {
-                display: flex;
-            }
         }
 
-        .active {
-            a {
-                background-color: var(--primary-color);
-                color: var(--white);
-                border-color: var(--primary-color);
-            }
-        }
     }
 }
 
 // Pagination rtl start
-.rtl .pagination-section ul li i {
+.rtl .pagination-section nav .pagination .page-item .page-link i {
     transform: rotate(180deg);
 }
 
 // Pagination rtl end
 // Dark theme paginaiton start
-.dark-theme{
-    .pagination-section nav{
-        background-color:  var(--bg-color4);
+.dark-theme {
+    .pagination-section nav {
+        background-color: var(--bg-color4);
+
+        .pagination {
+            .page-item {
+                .page-link {
+                    background: var(--bg-color6);
+                    border: 1px solid var(--bg-color3);
+                    color: var(--white);
+
+                    &:hover,
+                    &:focus {
+                        background: var(--primary-color);
+                    }
+                }
+
+                &.active .page-link {
+                    background: var(--primary-color);
+                }
+            }
+        }
     }
+
+
 }
+
 // Dark theme paginaiton end
 // ----------------------------------------------------
 // Pagination section end
