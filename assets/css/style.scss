@@ -244,7 +244,6 @@ textarea.form-control {
 }
 
 .rtl .form-check {
-    padding-left: auto;
     padding-right: 1.5em;
 
     .form-check-input {
@@ -254,7 +253,7 @@ textarea.form-control {
 }
 
 .form-select {
-    background-image: url(../images/shipment_calculator/downward-arrow.png);
+    background-image: url(../images/accordion/arrow-down.png);
     background-repeat: no-repeat;
 }
 
@@ -588,8 +587,9 @@ body::-webkit-scrollbar-thumb {
 
 // Dark theme offcanvas start 
 .dark-theme {
-    offcanvas.offcanvas-end {
+    .offcanvas.offcanvas-end {
         background-color: var(--bg-color6);
+        border-left: 1px solid var(--bg-color3);
     }
 }
 
@@ -966,9 +966,6 @@ section {
     font-family: 'Meddon', cursive;
     margin-bottom: 15px;
 
-    i {
-        color: var();
-    }
 }
 
 .social-area ul li a {
@@ -3480,3 +3477,5 @@ hr.divider:after {
 // ----------------------------------------------------
 // Pagination section end
 // ----------------------------------------------------
+
+ 
