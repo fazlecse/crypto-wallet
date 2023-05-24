@@ -367,13 +367,13 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link d-flex">
+                <div class="nav-link d-flex">
                     <i class="fa-light fa-moon" id="moon"></i>
                     <i class="fa-light fa-sun-bright" id="sun"></i>
                     <div class="form-check form-switch" id="toggle-btn">
-                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
                     </div>
-                </a>
+                </div>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="user-panel.html">
@@ -441,9 +441,9 @@
                                     </td>
                                     <td data-label="Action">
                                         <div class="dropdown">
-                                            <a class="" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                 <i class="fa-regular fa-ellipsis-stroke-vertical"></i>
-                                            </a>
+                                            </button>
                                             <ul class="dropdown-menu">
                                                 <li><a class="dropdown-item" href="#">save</a></li>
                                                 <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
@@ -475,9 +475,9 @@
                                     </td>
                                     <td data-label="Action">
                                         <div class="dropdown">
-                                            <a class="" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                 <i class="fa-regular fa-ellipsis-stroke-vertical"></i>
-                                            </a>
+                                            </button>
                                             <ul class="dropdown-menu">
                                                 <li><a class="dropdown-item" href="#">save</a></li>
                                                 <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
@@ -509,9 +509,10 @@
                                     </td>
                                     <td data-label="Action">
                                         <div class="dropdown">
-                                            <a class="" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <button class="" type="button" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
                                                 <i class="fa-regular fa-ellipsis-stroke-vertical"></i>
-                                            </a>
+                                            </button>
                                             <ul class="dropdown-menu">
                                                 <li><a class="dropdown-item" href="#">save</a></li>
                                                 <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
@@ -543,9 +544,10 @@
                                     </td>
                                     <td data-label="Action">
                                         <div class="dropdown">
-                                            <a class="" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <button class="" type="button" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
                                                 <i class="fa-regular fa-ellipsis-stroke-vertical"></i>
-                                            </a>
+                                            </button>
                                             <ul class="dropdown-menu">
                                                 <li><a class="dropdown-item" href="#">save</a></li>
                                                 <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
@@ -627,9 +629,9 @@
             </div>
         </div>
         <!-- Cmn table section end -->
-        <!-- -------------------------------------------------------- -->
+
         <!-- pagination section start -->
-        <!-- -------------------------------------------------------- -->
+
         <div class="pagination-section">
             <nav aria-label="...">
                 <ul class="pagination">
@@ -647,9 +649,9 @@
                 </ul>
             </nav>
         </div>
-        <!-- -------------------------------------------------------- -->
+
         <!-- pagination section end -->
-        <!-- -------------------------------------------------------- -->
+
 
 
     </main><!-- End #main -->
@@ -667,14 +669,14 @@
                 <div class="row g-4">
                     <div>
                         <label for="ProductName" class="form-label">Product Name</label>
-                        <input type="text" class="form-control" id="ProductName" aria-describedby="emailHelp">
+                        <input type="text" class="form-control" id="ProductName">
                     </div>
                     <div>
                         <label for="NumberOfSales" class="form-label">Number of sales</label>
-                        <input type="text" class="form-control" id="NumberOfSales" aria-describedby="emailHelp">
+                        <input type="text" class="form-control" id="NumberOfSales">
                     </div>
                     <div>
-                        <label for="inputAddress" class="form-label">status</label>
+                        <label class="form-label">status</label>
                         <select class="cmn-select2-dropdown" name="state">
                             <option value="AL">All status</option>
                             <option value="AL">Bangladesh</option>

@@ -367,13 +367,13 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link d-flex">
+                <div class="nav-link d-flex">
                     <i class="fa-light fa-moon" id="moon"></i>
                     <i class="fa-light fa-sun-bright" id="sun"></i>
                     <div class="form-check form-switch" id="toggle-btn">
-                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
                     </div>
-                </a>
+                </div>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="user-panel.html">
@@ -419,7 +419,7 @@
                     </ul>
                 </div>
                 <!-- Account settings navbar end -->
-                <form action="">
+                <form>
                     <div class="account-settings-profile-section">
                         <div class="card">
                             <div class="card-header border-0 text-start text-md-center">
@@ -431,7 +431,7 @@
                                     <div class="col-md-8 mx-auto">
                                         <div class="row g-4">
                                             <div class="col-12">
-                                                <label for="inputAddress" class="form-label">country</label>
+                                                <label class="form-label">country</label>
                                                 <select class="cmn-select2-dropdown" name="state">
                                                     <option value="AL">Select Type</option>
                                                     <option value="AL">Driving License</option>
@@ -450,8 +450,7 @@
                                                             <div class="btn-area-inner d-flex">
                                                                 <div class="cmn-file-input">
                                                                     <label for="formFile" class="form-label cmn-btn">
-                                                                        Select
-                                                                        Front Page</label>
+                                                                        Select Front Page</label>
                                                                     <input class="form-control" type="file"
                                                                         id="formFile">
                                                                 </div>
@@ -471,11 +470,10 @@
                                                         <div class="btn-area">
                                                             <div class="btn-area-inner d-flex">
                                                                 <div class="cmn-file-input">
-                                                                    <label for="formFile" class="form-label cmn-btn">
-                                                                        Select
-                                                                        Front Page</label>
+                                                                    <label for="formFile2" class="form-label cmn-btn">
+                                                                        Select Front Page</label>
                                                                     <input class="form-control" type="file"
-                                                                        id="formFile">
+                                                                        id="formFile2">
                                                                 </div>
                                                             </div>
                                                             <small>Allowed JPG, GIF or PNG. Max size of 800K</small>
@@ -499,14 +497,13 @@
                                                 <button type="button" class="cmn-btn">submit</button>
                                             </div>
                                         </div>
-
                                     </div>
-
                                 </div>
-
                             </div>
                         </div>
+                    </div>
                 </form>
+
             </div>
         </div>
 

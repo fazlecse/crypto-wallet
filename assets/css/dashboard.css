@@ -217,7 +217,6 @@ label {
 }
 
 .rtl .form-check {
-  padding-left: auto;
   padding-right: 1.5em;
 }
 .rtl .form-check .form-check-input {
@@ -2508,8 +2507,6 @@ hr.divider:after {
   background: linear-gradient(orange, deeppink, purple) border-box;
   --corner: conic-gradient(from -90deg at var(--c) var(--c), red 25%, #0000 0) 0 0/ calc(100% - var(--c)) calc(100% - var(--c)) border-box;
   --inner: conic-gradient(red 0 0) padding-box;
-  -webkit-mask: var(--corner), var(--inner);
-  -webkit-mask-composite: source-out;
   -webkit-mask: var(--corner), var(--inner);
   -webkit-mask-composite: source-out;
           mask: var(--corner) subtract, var(--inner);

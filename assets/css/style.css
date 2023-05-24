@@ -1,3 +1,6 @@
+/* ---------------------------------------------- */
+/*                    Typography                  */
+/* ---------------------------------------------- */
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&family=Prompt:wght@300;400;500;600;700;800;900&family=Raleway:wght@300;400;500;600;700;800&display=swap");
 :root {
   --body-font: "Prompt", sans-serif;
@@ -83,7 +86,7 @@
   color: var(--white);
 }
 .dark-theme .icon-box {
-  background-color: var(--bg-color3);
+  background-color: var(--bg-color6);
 }
 .dark-theme .feedback-inner-item .ratings {
   background: var(--bg-color4);
@@ -1879,11 +1882,11 @@ hr.divider:after {
 }
 .rtl .left-client-images-tbs .dts4 {
   right: 200px;
-  top: 200;
+  top: 200px;
 }
 .rtl .left-client-images-tbs .dts5 {
   right: 200px;
-  top: 400;
+  top: 400px;
 }
 .rtl .left-client-images-tbs .dts6 {
   right: 400px;

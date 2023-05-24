@@ -1,6 +1,5 @@
-
 // Preloader area
-var preloader = document.getElementById("preloader");
+const preloader = document.getElementById("preloader");
 function preloder_function() {
     preloader.style.display = "none";
 }

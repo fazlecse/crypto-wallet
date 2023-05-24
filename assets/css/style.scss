@@ -1,3 +1,7 @@
+@charset "UTF-8";
+/*----------------------------------------------
+    # Typography
+----------------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&family=Prompt:wght@300;400;500;600;700;800;900&family=Raleway:wght@300;400;500;600;700;800&display=swap');
 
 :root {
@@ -88,7 +92,7 @@
     }
 
     .icon-box {
-        background-color: var(--bg-color3);
+        background-color: var(--bg-color6);
     }
 
     .feedback-inner-item .ratings {
@@ -2290,12 +2294,12 @@ hr.divider:after {
 
         .dts4 {
             right: 200px;
-            top: 200;
+            top: 200px;
         }
 
         .dts5 {
             right: 200px;
-            top: 400;
+            top: 400px;
         }
 
         .dts6 {
@@ -3477,5 +3481,3 @@ hr.divider:after {
 // ----------------------------------------------------
 // Pagination section end
 // ----------------------------------------------------
-
- 
