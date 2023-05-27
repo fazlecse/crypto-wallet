@@ -142,24 +142,24 @@ $(document).ready(function () {
     $(function (e) {
         "use strict";
         e(".testimonial-slider-slick").slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: !1,
-            focusOnSelect: !0,
-            dots: !0,
-            autoplay: false,
+            slidesToShow: true,
+            slidesToScroll: true,
+            arrows: false,
+            focusOnSelect: true,
+            dots: true,
+            autoplay: true,
             autoplaySpeed: 2000,
             // rtl: true,
             appendDots: e(".custom-testimonial-pagination"),
             responsive: [{
                 breakpoint: 767,
                 settings: {
-                    autoplay: !1
+                    autoplay: true,
                 }
             }, {
                 breakpoint: 420,
                 settings: {
-                    autoplay: !1
+                    autoplay: true,
                 }
             }]
         }), e("a[data-slide]").click(function (s) {
