@@ -1,6 +1,34 @@
-/* ---------------------------------------------- */
-/*                    Typography                  */
-/* ---------------------------------------------- */
+/*
+Author        :
+Author Uri    :
+Template Name : 
+Version       : 1.0
+*/
+/*----------------------------------------------
+[Table of contents]
+
+01. Nav section start
+02. Bottom Mobile, Tab nav section start
+03. Hero section start
+04. Feature section start
+05. About section start
+06. How it works section start
+07. Testimonial section start
+08. Faq section start
+09. Blog section start
+10. Newsletter section start
+11. Footer section start
+12. Copyright section start
+13. Banner section start
+14. Contact section start
+15. Map section start
+16. Login Signup section start
+17. Blog details section start
+18. Pagination section start
+----------------------------------------------*/
+/*----------------------------------------------
+Typography
+----------------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&family=Prompt:wght@300;400;500;600;700;800;900&family=Raleway:wght@300;400;500;600;700;800&display=swap");
 :root {
   --body-font: "Prompt", sans-serif;
@@ -37,10 +65,6 @@
   --transition: all .3s ease-in-out;
 }
 
-#sun {
-  display: none;
-}
-
 .dark-theme {
   background-color: var(--bg-color3);
 }
@@ -72,6 +96,9 @@
 .dark-theme .form-select::placeholder {
   color: var(--white);
 }
+.dark-theme .form-select {
+  background-image: url(../images/accordion/dark-down-arrow.png);
+}
 .dark-theme .input-group-text {
   background: var(--bg-color4);
 }
@@ -97,6 +124,13 @@
   color: var(--white);
 }
 
+/*----------------------------------------------
+Reset section start
+----------------------------------------------*/
+.rtl {
+  direction: rtl;
+}
+
 ::-moz-selection {
   color: #fff;
   background: #534FFF;
@@ -107,20 +141,27 @@
   background: #534FFF;
 }
 
-/* preloader-start */
+/*----------------------------------------------
+preloader start
+----------------------------------------------*/
 #preloader {
   position: fixed;
   width: 100%;
   height: 100vh;
-  background: #ffffff url(../images/preloader/preloader.gif) no-repeat center;
+  background: var(--white) url(../images/preloader/preloader.gif) no-repeat center;
   z-index: 99999;
 }
 
-/* preloader-end */
-.rtl {
-  direction: rtl;
+.dark-theme #preloader {
+  background: var(--bg-color3) url(../images/preloader/preloader-darktheme.gif) no-repeat center;
 }
 
+/*----------------------------------------------
+end
+----------------------------------------------*/
+/*----------------------------------------------
+scroll up start
+----------------------------------------------*/
 .scroll-up {
   position: fixed;
   bottom: 40px;
@@ -158,6 +199,9 @@
   background: var(--btn-bg2);
 }
 
+/*----------------------------------------------
+end
+----------------------------------------------*/
 *,
 *::after,
 *::before {
@@ -254,6 +298,9 @@ textarea.form-control {
   background: transparent;
 }
 
+/*----------------------------------------------
+Select2 start
+----------------------------------------------*/
 span.select2.select2-container.select2-container--default {
   width: 100% !important;
 }
@@ -328,6 +375,12 @@ span.select2.select2-container.select2-container--default {
   text-align: right;
 }
 
+/*----------------------------------------------
+end
+----------------------------------------------*/
+/*----------------------------------------------
+Breadcrumb start
+----------------------------------------------*/
 .breadcrumb {
   display: inline-flex;
   justify-content: center;
@@ -353,6 +406,9 @@ span.select2.select2-container.select2-container--default {
   transform: rotate(180deg);
 }
 
+/*----------------------------------------------
+end
+----------------------------------------------*/
 p {
   color: #474D57;
   margin-bottom: 10px;
@@ -513,6 +569,15 @@ body::-webkit-scrollbar-thumb {
   transition: all 0.5s ease-in-out;
 }
 
+/*----------------------------------------------
+end
+----------------------------------------------*/
+/*----------------------------------------------
+Reuseble style section start
+----------------------------------------------*/
+/*----------------------------------------------
+Offcanvaes section start 
+----------------------------------------------*/
 .offcanvas {
   background: var(--bg-color1);
 }
@@ -531,11 +596,18 @@ body::-webkit-scrollbar-thumb {
   opacity: 1;
 }
 
+#sun {
+  display: none;
+}
+
 .dark-theme .offcanvas.offcanvas-end {
   background-color: var(--bg-color6);
   border-left: 1px solid var(--bg-color3);
 }
 
+/*----------------------------------------------
+end 
+----------------------------------------------*/
 .animation1 {
   position: relative;
   animation-name: animation1;
@@ -715,6 +787,9 @@ body::-webkit-scrollbar-thumb {
   color: var(--white);
 }
 
+/*----------------------------------------------
+Alerts section start 
+----------------------------------------------*/
 .alert {
   display: flex;
   align-items: center;
@@ -785,6 +860,12 @@ body::-webkit-scrollbar-thumb {
   color: #E89F29;
 }
 
+/*----------------------------------------------
+end 
+----------------------------------------------*/
+/*----------------------------------------------
+Cmn tab section start 
+----------------------------------------------*/
 .cmn-tabs {
   display: flex;
   justify-content: center;
@@ -813,6 +894,9 @@ body::-webkit-scrollbar-thumb {
   color: var(--white);
 }
 
+/*----------------------------------------------
+end
+----------------------------------------------*/
 .video-play-btn {
   position: absolute;
   top: 50%;
@@ -993,6 +1077,9 @@ hr.divider:after {
   animation: divider-effect 5s linear infinite;
 }
 
+/*----------------------------------------------
+Margin top start
+----------------------------------------------*/
 .mt-10 {
   margin-top: 10px;
 }
@@ -1057,7 +1144,12 @@ hr.divider:after {
   margin-top: 190px;
 }
 
-/* margin_bottom */
+/*----------------------------------------------
+end
+----------------------------------------------*/
+/*----------------------------------------------
+Margin bottom start
+----------------------------------------------*/
 .mb-10 {
   margin-bottom: 10px;
 }
@@ -1122,7 +1214,12 @@ hr.divider:after {
   margin-bottom: 150px;
 }
 
-/* padding_top */
+/*----------------------------------------------
+end
+----------------------------------------------*/
+/*----------------------------------------------
+Padding top start
+----------------------------------------------*/
 .pt-15 {
   padding-top: 15px;
 }
@@ -1183,6 +1280,12 @@ hr.divider:after {
   padding-top: 200px;
 }
 
+/*----------------------------------------------
+end
+----------------------------------------------*/
+/*----------------------------------------------
+Padding bottom
+----------------------------------------------*/
 .pb-15 {
   padding-bottom: 15px;
 }
@@ -1239,6 +1342,15 @@ hr.divider:after {
   padding-bottom: 150px;
 }
 
+/*----------------------------------------------
+end
+----------------------------------------------*/
+/*----------------------------------------------
+end
+----------------------------------------------*/
+/*----------------------------------------------
+01. Nav section start
+----------------------------------------------*/
 .navbar.active {
   background-color: var(--white);
   box-shadow: var(--shadow3);
@@ -1360,6 +1472,12 @@ hr.divider:after {
   color: var(--white);
 }
 
+/*----------------------------------------------
+end
+----------------------------------------------*/
+/*----------------------------------------------
+02. Bottom Mobile, Tab nav section start
+----------------------------------------------*/
 .bottom-nav {
   background: var(--white);
   justify-content: space-around;
@@ -1397,27 +1515,36 @@ hr.divider:after {
   color: var(--white);
 }
 
-.hero-area {
+/*----------------------------------------------
+end
+----------------------------------------------*/
+/*----------------------------------------------
+end
+----------------------------------------------*/
+/*----------------------------------------------
+03. Hero section start
+----------------------------------------------*/
+.hero-section {
   background-image: url(../images/background/bg-1.png);
   padding: 200px 0 100px;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.hero-area .hero-para-text {
+.hero-section .hero-para-text {
   font-size: 20px;
 }
-.hero-area .hero-bottom {
+.hero-section .hero-bottom {
   margin-top: 50px;
   max-width: 400px;
 }
-.hero-area .hero-bottom .trade-link {
+.hero-section .hero-bottom .trade-link {
   margin: 20px 0;
 }
-.hero-area .hero-bottom i {
+.hero-section .hero-bottom i {
   margin: 0 5px;
 }
-.hero-area .hero-bottom .cmn-btn {
+.hero-section .hero-bottom .cmn-btn {
   text-transform: initial;
 }
 
@@ -1426,7 +1553,7 @@ hr.divider:after {
     font-size: 42px;
     line-height: 50px;
   }
-  .hero-area .hero-para-text {
+  .hero-section .hero-para-text {
     font-size: 16px;
   }
   .cmn-para-text {
@@ -1438,30 +1565,36 @@ hr.divider:after {
   .cmn-btn2 {
     font-size: 16px;
   }
-  .hero-area {
+  .hero-section {
     padding: 100px 0 50px;
   }
 }
 @media (max-width: 767px) {
-  .hero-area {
+  .hero-section {
     text-align: center;
   }
-  .hero-area .hero-thum {
+  .hero-section .hero-thum {
     max-width: 300px;
     margin: auto;
   }
-  .hero-area .hero-bottom {
+  .hero-section .hero-bottom {
     margin: 50px auto 0;
   }
 }
-.rtl .hero-area .hero-bottom .fa-angle-right {
+.rtl .hero-section .hero-bottom .fa-angle-right {
   transform: rotate(180deg);
 }
 
-.dark-theme .hero-area {
+.dark-theme .hero-section {
   background: var(--bg-color3);
 }
 
+/*----------------------------------------------
+end
+----------------------------------------------*/
+/*----------------------------------------------
+04. Feature section start
+----------------------------------------------*/
 .feature-section {
   position: relative;
   background-image: url(../images/background/bg-2.png);
@@ -1531,6 +1664,12 @@ hr.divider:after {
   background: var(--bg-color4);
 }
 
+/*----------------------------------------------
+end
+----------------------------------------------*/
+/*----------------------------------------------
+05. About section start
+----------------------------------------------*/
 .about-section {
   background-image: url(../images/background/bg-1.png);
   background-size: cover;
@@ -1562,6 +1701,12 @@ hr.divider:after {
   background: var(--bg-color3);
 }
 
+/*----------------------------------------------
+end
+----------------------------------------------*/
+/*----------------------------------------------
+06. How it works section start
+----------------------------------------------*/
 .how-it-work {
   background: url(../images/background/bg-2.png);
   background-size: cover;
@@ -1608,6 +1753,12 @@ hr.divider:after {
   background: var(--bg-color4);
 }
 
+/*----------------------------------------------
+end
+----------------------------------------------*/
+/*----------------------------------------------
+07. Testimonial section start
+----------------------------------------------*/
 .testimonial-section {
   background: url(../images/background/bg-1.png);
   background-size: cover;
@@ -1982,6 +2133,12 @@ hr.divider:after {
   background: var(--bg-color3);
 }
 
+/*----------------------------------------------
+end
+----------------------------------------------*/
+/*----------------------------------------------
+08. Faq section start
+----------------------------------------------*/
 .faq-section {
   background: url(../images/background/bg-2.png);
   background-size: cover;
@@ -2057,6 +2214,12 @@ hr.divider:after {
   border-bottom: 1px solid var(--border-color4);
 }
 
+/*----------------------------------------------
+end
+----------------------------------------------*/
+/*----------------------------------------------
+09. Blog section start
+----------------------------------------------*/
 .blog-section {
   background: url(../images/background/bg-1.png);
   background-size: cover;
@@ -2161,6 +2324,12 @@ hr.divider:after {
   color: var(--grayish-blue);
 }
 
+/*----------------------------------------------
+end
+----------------------------------------------*/
+/*----------------------------------------------
+10. Newsletter section start
+----------------------------------------------*/
 .newsletter-area .Newslatter-title {
   font-weight: 500;
 }
@@ -2242,6 +2411,12 @@ hr.divider:after {
     padding: 0 30px 0 45px;
   }
 }
+/*----------------------------------------------
+end
+----------------------------------------------*/
+/*----------------------------------------------
+11. Footer section start
+----------------------------------------------*/
 .footer-section {
   background: var(--bg-color5);
 }
@@ -2300,6 +2475,12 @@ hr.divider:after {
   left: auto;
 }
 
+/*----------------------------------------------
+end
+----------------------------------------------*/
+/*----------------------------------------------
+12. Copyright section start
+----------------------------------------------*/
 .copy-right-area p {
   margin-bottom: 0;
   font-weight: 400;
@@ -2316,6 +2497,12 @@ hr.divider:after {
   margin-right: 10px;
 }
 
+/*----------------------------------------------
+end
+----------------------------------------------*/
+/*----------------------------------------------
+13. Banner section start
+----------------------------------------------*/
 .banner-nav {
   background: transparent;
 }
@@ -2359,6 +2546,12 @@ hr.divider:after {
   color: var(--white);
 }
 
+/*----------------------------------------------
+end
+----------------------------------------------*/
+/*----------------------------------------------
+14. Contact section start
+----------------------------------------------*/
 .contact-section {
   background-image: url(../images/background/bg-1.png);
   background-position: center;
@@ -2400,6 +2593,12 @@ hr.divider:after {
   background-color: var(--bg-color4);
 }
 
+/*----------------------------------------------
+end
+----------------------------------------------*/
+/*----------------------------------------------
+15. Map section start
+----------------------------------------------*/
 .map-section {
   margin-bottom: -15px;
 }
@@ -2408,6 +2607,12 @@ hr.divider:after {
   height: 450px;
 }
 
+/*----------------------------------------------
+end
+----------------------------------------------*/
+/*----------------------------------------------
+16. Login Signup section start
+----------------------------------------------*/
 .login-signup-page {
   background-image: url(../images/background/bg-1.png);
   background-position: center;
@@ -2454,6 +2659,12 @@ hr.divider:after {
   background: var(--bg-color4);
 }
 
+/*----------------------------------------------
+end
+----------------------------------------------*/
+/*----------------------------------------------
+17. Blog details section start
+----------------------------------------------*/
 .blog-details-section {
   background-image: url(../images/background/bg-1.png);
   background-position: center;
@@ -2622,6 +2833,12 @@ hr.divider:after {
   color: var(--primary-color);
 }
 
+/*----------------------------------------------
+end
+----------------------------------------------*/
+/*----------------------------------------------
+18. Pagination section start
+----------------------------------------------*/
 .pagination-section {
   margin-top: 50px;
   display: flex;
@@ -2674,3 +2891,7 @@ hr.divider:after {
 .dark-theme .pagination-section nav .pagination .page-item.active .page-link {
   background: var(--primary-color);
 }
+
+/*----------------------------------------------
+end
+----------------------------------------------*/
