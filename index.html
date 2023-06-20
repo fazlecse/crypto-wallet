@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Email Template</title>
+    <title>Crypto Wallet</title>
     <!-- Favicon-link -->
-    <link rel="shortcut icon" href="assets/images/logo/mail-send.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/logo/bitcoin.png" type="image/x-icon">
     <!-- Fontawesome6-Js-link -->
     <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
@@ -70,22 +70,22 @@
                             <a class="nav-link" href="faq.html">FAQ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Contact.html">Contact</a>
+                            <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                     </ul>
                     <form>
                         <ul class="nav-right d-flex align-items-center">
                             <li>
-                                <select class="form-select" aria-label="Default select example">
-                                    <option selected>English</option>
-                                    <option value="1">German</option>
-                                </select>
+                                <a href="login.html" class="login-btn">Login</a>
                             </li>
                             <li>
-                                <a class="link" href="login.html">Login</a>
+                                <a class="get-start-btn" href="signup.html">Get Started</a>
                             </li>
                             <li>
-                                <a class="get-start-btn" href="signup.html">sign up free</a>
+                                <a id="toggle-btn" class="nav-link d-flex toggle-btn">
+                                    <i class="fa-light fa-moon" id="moon"></i>
+                                    <i class="fa-light fa-sun-bright" id="sun"></i>
+                                </a>
                             </li>
                         </ul>
                     </form>
@@ -125,39 +125,43 @@
     <div class="hero-section">
         <div class="container">
             <div class="row g-4 align-items-center">
-                <div class="col-md-6 order-2 order-md-1">
-                    <div class="section-subtitle">Email Marketing
+                <div class="col-lg-7 col-md-6 order-2 order-md-1">
+                    <div class="section-subtitle"><img src="assets/images/hero/lightning.png" alt="">GET 10% OFF NOW
                     </div>
-                    <h1>Top lead generation agency for marketing</h1>
-                    <p>An integrated approch, including cold emails, advanced social engineering, professional targeting in social networks and GA.</p>
+                    <h1>Buy and sell Cryptocurrency</h1>
 
-                    <div class="btn-area">
-                        <a href="" class="cmn-btn">get started</a>
+                    <div class="hero-bottom">
+                        <div class="trade-link">
+                            <h5><a href=""><span><i class="fa-regular fa-gift"></i></span> Trade Bitcoin for free<i
+                                        class="fa-regular fa-angle-right"></i></a></h5>
+                        </div>
+
+                        <button type="button" class="cmn-btn w-100"><i class="fa-light fa-user"></i> Sign up with
+                            Email or
+                            Phone</button>
+                        <hr class="divider">
+                        <div class="cmn-btn-group">
+                            <div class="row g-2">
+                                <div class="col-sm-4">
+                                    <button type="submit" class="btn cmn-btn3 w-100 social-btn"><img
+                                            src="assets/images/login_signup/google.png" alt="">Google</button>
+                                </div>
+                                <div class="col-sm-4">
+                                    <button type="submit" class="btn cmn-btn3 w-100 social-btn"><img
+                                            src="assets/images/login_signup/facebook.png" alt="">Facebook</button>
+                                </div>
+                                <div class="col-sm-4">
+                                    <button type="submit" class="btn cmn-btn3 w-100 social-btn"><img
+                                            src="assets/images/login_signup/apple-logo.png" alt="">Apple</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
-                <div class="col-md-6 order-1 order-md-2">
+                <div class="col-lg-5 col-md-6 order-1 order-md-2">
                     <div class="hero-thum">
-                        <img src="assets/images/hero/hero-02.png" alt="">
-                        <div class="shape shape1">
-                            <div class="icon-area">
-                                <img src="assets/images/hero/service.png" alt="">
-                            </div>
-                            <div class="text-area">
-                                <h4>30,458</h4>
-                                <span>Clients Served</span>
-                            </div>
-
-                        </div>
-                        <div class="shape shape2">
-                            <div class="icon-area">
-                                <img src="assets/images/hero/smile.png" alt="">
-                            </div>
-                            <div class="text-area">
-                                <h4>30,458</h4>
-                                <span>Happy clients</span>
-                            </div>                           
-                        </div>
+                        <img src="assets/images/hero/Crypto-portfolio-bro.png" alt="">
                     </div>
                 </div>
             </div>
@@ -173,60 +177,87 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-header mx-auto text-center mb-50">
-                        
+                        <h2 class="section-title mx-auto">Our Special Features
+                        </h2>
+                        <span class="title-border"></span>
+                        <p class="cmn-para-text mx-auto">A cryptocurrency wallet is a digital wallet that allows you to
+                            store, send, and receive cryptocurrencies like Bitcoin, Ethereum, and others.</p>
                     </div>
                 </div>
             </div>
-            <div class="row g-4 align-items-center">
-                <div class="col-md-5">
-                    <div class="section-subtitle">Feature</div>
-                        <h2 class="section-title">Our Special Features
-                        </h2>
-                        <p class="cmn-para-text mx-auto">Email is one of the most powerful channels for marketers in 2022, but it’s also among the most competitive.
-                        <br>
-                        <br>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-box">
+                        <div class="icon-box">
+                            <i class="fa-light fa-coins"></i>
+                        </div>
+                        <div class="text-box">
+                            <h4>Multi-Coin Wallet</h4>
+                            <p>One wallet. 2,210+ coins. Countless features on the go.</p>
+                        </div>
 
-                        If you’re looking to drive traffic and sales through email campaigns, you’ll need cutting-edge software to automate various tasks and help you work more efficiently. In 2022, a recent study showed that 21% of emails are opened within the first hour of being delivered. 
-                        </p>
+                    </div>
+                    <div class="feature-box ms-lg-4">
+                        <div class="icon-box">
+                            <i class="fa-brands fa-bitcoin"></i>
+                        </div>
+                        <div class="text-box">
+                            <h4>Cryptocurrency Vault</h4>
+                            <p>Safeguard your coins in our vault and lock them for as long as you want.</p>
+                        </div>
+
+                    </div>
+                    <div class="feature-box">
+                        <div class="icon-box">
+                            <i class="fa-light fa-thumbs-up"></i>
+                        </div>
+                        <div class="text-box">
+                            <h4>Auto Forward Feature</h4>
+                            <p>Automatically send payments to any crypto wallet you want.</p>
+                        </div>
+
+                    </div>
                 </div>
-                <div class="col-md-7">
+                <div class="col-lg-4 col-sm-6 justify-content-center d-flex d-none d-lg-block">
+                    <div class="feature-mid-section">
+                        <div class="feature-thum">
+                            <img src="assets/images/feature-section/mission.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
                     <div class="feature-box">
                         <div class="icon-box">
-                            01
+                            <i class="fa-light fa-earth-americas"></i>
                         </div>
                         <div class="text-box">
-                            <h5>Mobile Optimization</h5>
-                            <span>More and more users are opening emails on mobile devices every year, and your messages should be just as easy to read on the smaller screen.</span>
+                            <h4>Global Payments</h4>
+                            <p>Grow your business globally with borderless, instant and low-cost crypto transactions.
+                            </p>
                         </div>
+
                     </div>
-                    <div class="feature-box feature-box-right">
+                    <div class="feature-box ms-lg-4">
                         <div class="icon-box">
-                            02
+                            <i class="fa-brands fa-sellcast"></i>
                         </div>
                         <div class="text-box">
-                            <h5>Scalable Pricing</h5>
-                            <span>If you’re new to email marketing automation, you probably don’t want to break the bank on an enterprise-level plan.</span>
+                            <h4>Point Of Sale (POS)</h4>
+                            <p>Enhance in-person transactions with crypto payments.</p>
                         </div>
+
                     </div>
                     <div class="feature-box">
                         <div class="icon-box">
-                            03
+                            <i class="fa-light fa-arrow-right-arrow-left"></i>
                         </div>
                         <div class="text-box">
-                            <h5>Robust Analytics</h5>
-                            <span>Contemporary digital marketing is all about data, and different platforms offer more or fewer reporting features.</span>
+                            <h4>Auto Coin Conversion</h4>
+                            <p>Avoid volatility by automatically converting coins.</p>
                         </div>
+
                     </div>
-                    <div class="feature-box feature-box-right">
-                        <div class="icon-box">
-                            04
-                        </div>
-                        <div class="text-box">
-                            <h5>Third-party Integrations</h5>
-                            <span>Most organizations already use a variety of apps and subscription services, and you want an email marketing platform that fits into your existing tech stack.</span>
-                        </div>
-                    </div>
-                    
                 </div>
             </div>
         </div>

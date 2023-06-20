@@ -34,16 +34,17 @@ Version       : 1.0
 /*----------------------------------------------
 Typography
 ----------------------------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&family=Prompt:wght@300;400;500;600;700;800;900&family=Raleway:wght@300;400;500;600;700;800&family=Roboto+Condensed:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&family=Prompt:wght@300;400;500;600;700;800;900&family=Raleway:wght@300;400;500;600;700;800&display=swap');
 
 :root {
     --body-font: 'Prompt', sans-serif;
-    --heading-font: 'Prompt', sans-serif;
-    --primary-color: #3368fa;
-    --heading-color: #13281E;
-    --black: #13281E;
+    --heading-font: 'Nunito', sans-serif;
+    --primary-color: #534FFF;
+    --heading-color: #182122;
+    --black: #182122;
     --grayish-blue: #929cbf;
-    --btn-bg1: #3368fa;
+    --btn-bg1: #534FFF;
+    --btn-bg2: #6c69ff;
     --white: #ffffff;
     --soft-blue: #C1BFFD;
     --grayish-violet: #f5f4f7;
@@ -52,9 +53,7 @@ Typography
     --lime-green: #40b781;
     --vivid-orange: #fb6116;
     --yellow: #fcc013;
-    --primary-color-opacity-low: rgb(11, 153, 111, 0.1);
     --bg-color1: #F5F4F7;
-    --bg-color1: #F3F4F6;
     --bg-color2: #EEF5FF;
     --bg-color3: #1E2022;
     --bg-color4: #25282A;
@@ -63,8 +62,8 @@ Typography
     --body-color: #707070;
     --border-color1: #f2f2f2;
     --border-color2: #e1e1e1;
-    --border-color3: rgb(51, 104, 250, 0.5);
-
+    --border-color3: #242C2E;
+    --border-color4: #5f6262;
     --shadow1: 0px 3px 5px 0px rgba(0, 0, 0, 0.10);
     --shadow2: 0px 0px 5px 0px rgba(0, 0, 0, 0.10);
     --shadow3: 0px 0px 5px 0px rgba(0, 0, 0, 0.10);
@@ -150,12 +149,12 @@ Reset section start
 
 ::-moz-selection {
     color: #fff;
-    background: #3368fa;
+    background: #534FFF;
 }
 
 ::selection {
     color: #fff;
-    background: #3368fa;
+    background: #534FFF;
 }
 
 /*----------------------------------------------
@@ -276,7 +275,7 @@ textarea.form-control {
 
 .form-control:focus,
 .form-select:focus {
-    box-shadow: 0 0 0 4px rgb(11, 153, 111, 0.1);
+    box-shadow: 0 0 0 4px rgba(83, 79, 255, .1);
     border: 1px solid var(--primary-color);
 }
 
@@ -491,9 +490,9 @@ h5 {
 }
 
 h1 {
-    font-size: 58px;
+    font-size: 68px;
     margin-bottom: 25px;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 70px;
 }
 
@@ -501,7 +500,7 @@ h2 {
     font-size: 36px;
     text-transform: capitalize;
     margin-bottom: 20px;
-    font-weight: 500;
+    font-weight: 700;
     color: var(--heading-color);
 
 }
@@ -522,7 +521,7 @@ h4 {
     font-size: 24px;
     text-transform: capitalize;
     margin-bottom: 5px;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 @media (max-width: 991px) {
@@ -534,7 +533,7 @@ h4 {
 h5 {
     font-size: 20px;
     margin-bottom: 5px;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 h6 {
@@ -555,7 +554,7 @@ figure {
 }
 
 .logo {
-    max-width: 130px;
+    max-width: 100px;
     min-width: 100px;
 }
 
@@ -590,7 +589,7 @@ figure {
 }
 
 body::-webkit-scrollbar {
-    width: 5px;
+    width: 10px;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -686,43 +685,18 @@ end
     }
 }
 
-.shape {
-    position: absolute;
-    background-color: var(--white);
-    box-shadow: var(--shadow4);
-    padding: 15px;
-    border-radius: 10px;
-    text-transform: capitalize;
-    text-align: center;
-
-    .icon-area {
-        margin-bottom: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        img {
-            width: 50px;
-            height: 50px;
-        }
-
-    }
-}
-
 .shape1 {
     position: absolute;
-    top: 50px;
-    left: -70px;
+    top: -240px;
+    z-index: -1;
+    left: 35px;
 }
 
 .shape2 {
     position: absolute;
-    bottom: 50px;
-    right: -70px;
-
-    i {
-        color: var(--yellow);
-    }
+    top: 160px;
+    z-index: -1;
+    width: 260px;
 }
 
 .shape3 {
@@ -778,23 +752,21 @@ end
 
 .cmn-btn {
     background: var(--btn-bg1);
-    padding: 7px 20px;
-    border-radius: 15px;
+    padding: 8px 20px;
+    border-radius: 10px;
     transition: all .3s ease-in-out;
     font-size: 16px;
     color: var(--white);
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 500;
     text-transform: capitalize;
     font-family: var(--heading-font);
-    border: 1px solid var(--primary-color);
 
     &:hover {
-        color: var(--primary-color);
-        border: 1px solid var(--primary-color);
-        background-color: var(--white);
+        color: var(--white);
+        background: var(--btn-bg2);
     }
 }
 
@@ -868,23 +840,22 @@ end
 }
 
 .get-start-btn {
-    padding: 5px 15px;
-    border-radius: 15px;
+    padding: 8px 25px;
+    border-radius: 10px;
     font-size: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 400;
+    font-weight: 700;
     background: var(--btn-bg1);
     color: var(--white);
     transition: var(--transition);
     font-family: var(--heading-font);
-    border: 2px solid var(--primary-color);
-    text-transform: capitalize;
+    border: 1px solid transparent;
 
     &:hover {
-        color: var(--heading-color);
-        background-color: var(--white);
+        background: var(--btn-bg2);
+        color: var(--white);
     }
 }
 
@@ -1057,15 +1028,12 @@ section {
 .section-subtitle {
     font-size: 18px;
     color: var(--primary-color);
-    font-weight: 400;
+    font-weight: 700;
     max-width: 662px;
     position: relative;
     display: inline-block;
-    font-family: "Meddon", cursive;
-    margin-bottom: 20px;
-    padding: 5px 20px;
-    border-radius: 15px;
-    background-color: var(--primary-color-opacity-low);
+    font-family: 'Meddon', cursive;
+    margin-bottom: 15px;
 
 }
 
@@ -1541,49 +1509,40 @@ end
 
         .nav-link {
             font-size: 16px;
-            font-weight: 400;
+            font-weight: 700;
             color: var(--heading-color);
             text-transform: capitalize;
-            padding: 5px 15px;
+            padding: 25px 15px;
             font-family: var(--heading-font);
 
-            &:hover,
-            &.active {
+            &:hover {
                 color: var(--primary-color);
             }
         }
 
+        .nav-link.active {
+            color: var(--primary-color);
+        }
+
+        .nav-right li {
+            margin-left: 8px;
+        }
     }
 
     .nav-right {
         li {
             &:not(:last-child) {
-                margin-right: 15px;
+                margin-right: 10px;
             }
 
-            .link {
-                font-size: 16px;
-                font-weight: 400;
+            .toggle-btn {
+                font-size: 22px;
+                cursor: pointer;
                 color: var(--heading-color);
-                text-transform: capitalize;
-                padding: 5px 15px;
-                font-family: var(--heading-font);
 
-                &:hover,
-                &.active {
-                    color: var(--primary-color);
+                i {
+                    margin: 0 5px;
                 }
-            }
-
-            .form-select {
-                height: initial;
-                font-size: 16px;
-                font-weight: 400;
-                color: var(--heading-color);
-                font-family: var(--heading-font);
-                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
-                border: 1px solid var(--border-color3);
-                border-radius: 5px;
             }
         }
     }
@@ -1602,10 +1561,6 @@ end
 
 // Nav responsive start
 @media (min-width: 992px) {
-    .navbar {
-        padding: 15px 0;
-    }
-
     .navbar-expand-lg .navbar-toggler {
         display: none !important;
     }
@@ -1748,27 +1703,31 @@ end
 ----------------------------------------------*/
 
 .hero-section {
+    background-image: url(../images/background/bg-1.png);
     padding: 200px 0 100px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     .hero-para-text {
         font-size: 20px;
     }
 
-    .btn-area {
-        margin-top: 30px;
-    }
-
-    .hero-thum {
-        position: relative;
-        max-width: 350px;
-        margin: auto;
-        background-color: var(--primary-color);
-        border-radius: 200px;
-
-        img {
-            border-radius: 200px;
+    .hero-bottom {
+        .trade-link {
+            margin: 20px 0;
         }
 
+        i {
+            margin: 0 5px;
+        }
+
+        margin-top: 50px;
+        max-width: 400px;
+
+        .cmn-btn {
+            text-transform: initial;
+        }
     }
 }
 
@@ -1848,7 +1807,10 @@ end
 04. Feature section start
 ----------------------------------------------*/
 .feature-section {
-    background-color: var(--bg-color1);
+    position: relative;
+    background-image: url(../images/background/bg-2.png);
+    background-size: cover;
+    background-position: center;
 
     .feature-mid-section {
         display: flex;
@@ -1869,12 +1831,7 @@ end
 
 .feature-box {
     display: flex;
-    margin-bottom: 30px;
-    background-color: white;
-    padding: 10px 15px;
-    border-radius: 50px;
-    align-items: center;
-    max-width: 85%;
+    margin-bottom: 50px;
 }
 
 .icon-box {
@@ -1882,13 +1839,13 @@ end
     align-items: center;
     justify-content: center;
     margin-right: 20px;
-    width: 70px;
-    min-width: 70px;
-    height: 70px;
+    width: 60px;
+    min-width: 60px;
+    height: 60px;
     box-shadow: var(--shadow4);
-    border-radius: 50px;
+    border-radius: 50%;
     color: var(--primary-color);
-    font-size: 30px;
+    font-size: 28px;
 }
 
 .text-box {
@@ -1898,17 +1855,7 @@ end
         font-weight: 500;
     }
 }
-.feature-box-right{
-    flex-direction: row-reverse;
-    margin-left: auto;
-    .icon-box{
-        margin-right: 0;
-        margin-left: 20px;
-    }
-    .text-box{
-        text-align: right;
-    }
-}
+
 // Feature responsive start
 
 @media (max-width: 991px) {
@@ -3664,7 +3611,6 @@ Error section start
 @media (max-width: 991px) {
     .error-section {
         padding: 100px 0;
-
         .error-content {
             .error-title {
                 font-size: 100px;
@@ -3676,7 +3622,6 @@ Error section start
         }
     }
 }
-
 @media (max-width: 991px) {
     .error-section {
         .error-content {
@@ -3690,7 +3635,6 @@ Error section start
         }
     }
 }
-
 @media (max-width: 575px) {
     .error-section {
         height: 100%;
