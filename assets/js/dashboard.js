@@ -262,7 +262,7 @@ function formatState(state) {
     if (!state.id) {
         return state.text;
     }
-    var baseUrl = "../images/mini-flag";
+    var baseUrl = "../img/mini-flag";
     var $state = $(
         '<span><img src="' + baseUrl + '/' + state.element.value.toLowerCase() + '.svg" class="img-flag" /> ' + state.text + '</span>'
     );

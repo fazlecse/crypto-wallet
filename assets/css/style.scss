@@ -103,7 +103,7 @@ Typography
     }
 
     .form-select {
-        background-image: url(../images/accordion/dark-down-arrow.png);
+        background-image: url(../img/accordion/dark-down-arrow.png);
     }
 
     .input-group-text {
@@ -164,14 +164,14 @@ preloader start
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: var(--white) url(../images/preloader/preloader.gif) no-repeat center;
+    background: var(--white) url(../img/preloader/preloader.gif) no-repeat center;
     z-index: 99999;
 }
 
 // Dark theme preloader strat 
 .dark-theme {
     #preloader {
-        background: var(--bg-color3) url(../images/preloader/preloader-darktheme.gif) no-repeat center;
+        background: var(--bg-color3) url(../img/preloader/preloader-darktheme.gif) no-repeat center;
     }
 }
 
@@ -304,7 +304,7 @@ textarea.form-control {
 }
 
 .form-select {
-    background-image: url(../images/accordion/arrow-down.png);
+    background-image: url(../img/accordion/arrow-down.png);
     background-repeat: no-repeat;
 }
 
@@ -325,6 +325,29 @@ textarea.form-control {
     background: transparent;
 }
 
+/*----------------------------------------------
+intlTelInput start
+----------------------------------------------*/
+.iti {
+    display: flex;
+}
+.iti__selected-flag{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.iti__country-list {
+    box-shadow: var(--shadow1);
+    border: 1px solid var(--border-color2);
+    border-radius: 5px;
+}
+
+.iti-mobile .iti__country-list {
+    z-index: 9999;
+}
+
+/*----------------------------------------------
+intlTelInput end
+----------------------------------------------*/
 /*----------------------------------------------
 Select2 start
 ----------------------------------------------*/
@@ -1703,7 +1726,7 @@ end
 ----------------------------------------------*/
 
 .hero-section {
-    background-image: url(../images/background/bg-1.png);
+    background-image: url(../img/background/bg-1.png);
     padding: 200px 0 100px;
     background-position: top;
     background-repeat: no-repeat;
@@ -1808,7 +1831,7 @@ end
 ----------------------------------------------*/
 .feature-section {
     position: relative;
-    background-image: url(../images/background/bg-2.png);
+    background-image: url(../img/background/bg-2.png);
     background-size: cover;
     background-position: center;
 
@@ -1908,7 +1931,7 @@ end
 05. About section start
 ----------------------------------------------*/
 .about-section {
-    background-image: url(../images/background/bg-1.png);
+    background-image: url(../img/background/bg-1.png);
     background-size: cover;
     background-position: center;
 
@@ -1963,7 +1986,7 @@ end
 06. How it works section start
 ----------------------------------------------*/
 .how-it-work {
-    background: url(../images/background/bg-2.png);
+    background: url(../img/background/bg-2.png);
     background-size: cover;
     background-position: center;
 
@@ -2040,7 +2063,7 @@ end
 ----------------------------------------------*/
 
 .testimonial-section {
-    background: url(../images/background/bg-1.png);
+    background: url(../img/background/bg-1.png);
     background-size: cover;
     background-position: center;
 }
@@ -2537,7 +2560,7 @@ end
 ----------------------------------------------*/
 
 .faq-section {
-    background: url(../images/background/bg-2.png);
+    background: url(../img/background/bg-2.png);
     background-size: cover;
     background-position: center;
 
@@ -2575,7 +2598,7 @@ end
     background: transparent;
 
     &::after {
-        background: url(../images/accordion/plus.png);
+        background: url(../img/accordion/plus.png);
         width: 30px;
         height: 30px;
         background-color: var(--primary-color);
@@ -2587,7 +2610,7 @@ end
 
     &:not(.collapsed) {
         &::after {
-            background: url(../images/accordion/minus.png);
+            background: url(../img/accordion/minus.png);
             width: 30px;
             height: 30px;
             background-color: var(--primary-color);
@@ -2642,7 +2665,7 @@ end
 ----------------------------------------------*/
 
 .blog-section {
-    background: url(../images/background/bg-1.png);
+    background: url(../img/background/bg-1.png);
     background-size: cover;
     background-position: center;
 }
@@ -3091,7 +3114,7 @@ end
 14. Contact section start
 ----------------------------------------------*/
 .contact-section {
-    background-image: url(../images/background/bg-1.png);
+    background-image: url(../img/background/bg-1.png);
     background-position: center;
     background-size: cover;
 
@@ -3175,7 +3198,7 @@ end
 16. Login Signup section start
 ----------------------------------------------*/
 .login-signup-page {
-    background-image: url(../images/background/bg-1.png);
+    background-image: url(../img/background/bg-1.png);
     background-position: center;
     background-size: cover;
 
@@ -3253,7 +3276,7 @@ end
 17. Blog details section start
 ----------------------------------------------*/
 .blog-details-section {
-    background-image: url(../images/background/bg-1.png);
+    background-image: url(../img/background/bg-1.png);
     background-position: center;
     background-size: cover;
 
@@ -3611,6 +3634,7 @@ Error section start
 @media (max-width: 991px) {
     .error-section {
         padding: 100px 0;
+
         .error-content {
             .error-title {
                 font-size: 100px;
@@ -3622,6 +3646,7 @@ Error section start
         }
     }
 }
+
 @media (max-width: 991px) {
     .error-section {
         .error-content {
@@ -3635,6 +3660,7 @@ Error section start
         }
     }
 }
+
 @media (max-width: 575px) {
     .error-section {
         height: 100%;

@@ -235,5 +235,13 @@ function setTheme() {
 setTheme();
 // Dark theme end
 
+// Int Tel Input With Flags and Dial Codes start
+const input = document.querySelector("#telephone");
+window.intlTelInput(input, {
+    initialCountry: "bd",
+    separateDialCode: true,
+});
+// Int Tel Input With Flags and Dial Codes end
+
 
 
